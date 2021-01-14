@@ -1,0 +1,128 @@
+//BUTTON STYLES
+.btn {
+  &--white {
+    background-color: $bg-white;
+    color: $color-primary-dark;
+
+    /* This is inserted so the ::after has the same background-color as the original button */
+    &::after {
+      background-color: $bg-white;
+    }
+  }
+
+  &--primary {
+    background-color: $bg-primary;
+    color: $color-white;
+
+    /* This is inserted so the ::after has the same background-color as the original button */
+    &::after {
+      background-color: $bg-primary;
+    }
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+    /* Automatically applies the styles of the @keyframe moveInBottom 0% before the animation starts */
+  }
+}
+
+/* Initial state of button
+Since the button is a link (<a>), the pseudo-class :link should be used 
+These properties detail how the button looks before it's been clicked (:link) and after it's been clicked (:visited) */
+
+//MAIN BUTTON
+.btn--main {
+  &:link,
+  &:visited {
+    /* The relative position is inserted within the button as a reference for the .btn::after pseudo-element absolute position */
+    position: relative;
+    padding: 1em 2em;
+
+    @include button-styles;
+    @include respond(large) {
+      padding: 1.5rem 4rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.3em);
+    box-shadow: 0 1em 2em rgba($color-primary-dark, 0.2);
+
+    /* We want to see ::after when we hover over the button */
+    &::after {
+      /* Increase the element size within the X-axis and the Y-axis */
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-0.1em);
+    box-shadow: 0 0.5em 1em rgba($color-primary-dark, 0.2);
+  }
+
+  /* The ::after pseudo-element inserts some content after the content of the element (button) 
+  Goal is to add an element that looks exactly like the button we already have but we put it behind the button and when we hover out of button then the hidden pseudo-element goes back behind the button. */
+  &::after {
+    content: '';
+    display: inline-block;
+    /* The ::after is treated like a child of the button, therefore by inserting 100% for the height and width within ::after then this is 100% of the height and width of the button's specifications thus creating a button of the same size */
+    width: 100%;
+    height: 100%;
+    border-radius: 10em;
+    transition: all 0.4s;
+    z-index: -1;
+
+    /* The absolute position will place ::after behind the actual button. Must have a reference which would be the first element with a relative position that it can find. Therefore, the reference should be the button.  */
+    @include absolute-pos;
+  }
+}
+
+//SECONDARY BUTTON
+.btn--secondary {
+  &,
+  &:link,
+  &:visited {
+    padding: 0.5em 1em;
+    border: solid 2px $color-orange;
+
+    @include button-styles;
+
+    &:hover {
+      background-color: $bg-orange;
+      color: $color-white;
+      transform: translateY(-0.3em);
+      box-shadow: 0 1em 2em rgba($color-orange, 0.2);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-0.1em);
+      box-shadow: 0 0.5em 1em rgba($color-orange, 0.2);
+    }
+  }
+}
+
+//TERTIARY BUTTON
+.btn--tertiary {
+  &:link,
+  &:visited {
+    padding: 1em 2em;
+
+    @include button-styles;
+  }
+
+  &:hover {
+    background-color: $bg-primary;
+    color: $color-white;
+    transform: translateY(-0.3em);
+    box-shadow: 0 1em 2em rgba($color-primary, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-0.1em);
+    box-shadow: 0 0.5em 1em rgba($color-primary, 0.2);
+  }
+}

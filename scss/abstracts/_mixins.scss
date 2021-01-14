@@ -1,0 +1,54 @@
+@mixin filter-blur {
+  background-color: rgba($color-white, 0.5);
+  backdrop-filter: blur(7px);
+}
+
+@mixin center-self {
+  justify-self: center;
+  align-self: center;
+}
+
+@mixin button-styles {
+  display: inline-block;
+  border-radius: 10em;
+  transition: all 0.2s;
+}
+
+@mixin absolute-pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin ab-pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin grid-1col {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+//RESPONSIVE MEDIA QUERIES
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: 37.5em) {
+      @content;
+    } //600px
+  }
+
+  @if $breakpoint == medium {
+    @media (min-width: 48em) {
+      @content;
+    } //768px
+  }
+
+  @if $breakpoint == large {
+    @media (min-width: 60em) {
+      @content;
+    } //960px
+  }
+}

@@ -1,0 +1,205 @@
+//OVERALL SITE
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+//BUTTONS AND FOOTER
+.btn--main:link,
+.btn--main:visited,
+.btn--tertiary:link,
+.btn--tertiary:visited {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.btn--secondary:link,
+.btn--secondary:visited,
+.footer__list,
+.footer__credit {
+  font-size: 1.4rem;
+}
+
+//NAVIGATION
+.navigation__link {
+  &:link,
+  &:visited {
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @include respond(medium) {
+      font-size: clamp(1.4rem, calc(1.2857rem + 0.3571vw), 1.8rem);
+      font-weight: 400;
+    }
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary-dark;
+  }
+
+  &--btn:link,
+  &--btn:visited {
+    color: $color-primary-dark;
+    font-size: 1.8rem;
+
+    @include respond(medium) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+//MAIN HEADER
+.heading__main {
+  color: $color-white;
+  text-transform: uppercase;
+
+  &--title {
+    font-size: clamp(2.3rem, calc(0.4659rem + 5.7317vw), 7rem);
+    font-weight: 400;
+  }
+
+  &--subtitle {
+    font-size: clamp(1.6rem, calc(1.2488rem + 1.0976vw), 2.5rem);
+    font-weight: 700;
+  }
+}
+
+//SECONDARY HEADER
+.heading__secondary {
+  color: $color-primary;
+  font-size: clamp(2rem, calc(1.7143rem + 0.8929vw), 3rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+//ABOUT & FEATURES SECTIONS
+.section__about--info,
+.section__features--info {
+  color: $color-primary-dark;
+
+  h3 {
+    font-size: clamp(1.8rem, calc(1.6049rem + 0.6098vw), 2.3rem);
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: clamp(1.4rem, calc(1.2857rem + 0.3571vw), 1.8rem);
+  }
+}
+
+//TOURS SECTION
+.card {
+  color: $color-primary-dark;
+
+  &__heading {
+    h3 {
+      font-size: clamp(1.8rem, calc(1.6049rem + 0.6098vw), 2.3rem);
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    ul {
+      font-size: clamp(1.4rem, calc(1.2857rem + 0.3571vw), 1.8rem);
+      font-weight: 300;
+    }
+  }
+
+  &__booking {
+    p {
+      font-size: clamp(1.4rem, calc(1.2857rem + 0.3571vw), 1.8rem);
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    p.price {
+      font-size: clamp(3rem, calc(2.2195rem + 2.439vw), 5rem);
+      font-weight: 300;
+    }
+  }
+}
+
+//STORIES SECTION
+.story {
+  color: $color-primary-dark;
+
+  h4 {
+    font-size: clamp(1.6rem, calc(1.4439rem + 0.4878vw), 2rem);
+    text-transform: uppercase;
+  }
+
+  figcaption,
+  p {
+    font-size: clamp(1.4rem, calc(1.2857rem + 0.3571vw), 1.8rem);
+  }
+
+  figcaption {
+    color: $color-white;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+//BOOKING SECTION
+.form--wrapper {
+  color: $color-primary-dark;
+  font-size: clamp(1.6rem, calc(1.4439rem + 0.4878vw), 2rem);
+}
+
+.form--input {
+  color: inherit;
+  font-family: inherit;
+}
+
+//BOOKING MODAL
+.modal {
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-primary-dark;
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.modal__heading h3 {
+  color: $color-primary-dark;
+  font-size: clamp(1.4rem, calc(1.2857rem + 0.3571vw), 1.8rem);
+  text-transform: uppercase;
+}
+
+.modal__info p {
+  color: $color-primary-dark;
+  font-size: 1.4rem;
+}
+
+//FOOTER
+.footer {
+  color: $color-white;
+
+  &--flex {
+    a:link,
+    a:visited {
+      color: $color-white;
+      text-transform: uppercase;
+    }
+
+    li:hover {
+      border-bottom: solid 2px $color-orange;
+    }
+  }
+}
