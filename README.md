@@ -60,24 +60,13 @@ LESSONS LEARNED
 4. Learned how to create a CSS-only modal
 
 5. Learned the best practice for inserting media queries into my Sass code
+    
     @mixin respond($breakpoint) {
-      @if $breakpoint == small {
-        @media (min-width: 37.5em) {
-          @content;
-        } //600px
-      }
+      @if $breakpoint == small { @media (min-width: 37.5em) { @content; } } //600px
 
-      @if $breakpoint == medium {
-        @media (min-width: 48em) {
-          @content;
-        } //768px
-      }
+      @if $breakpoint == medium { @media (min-width: 48em) { @content; } } //768px
 
-      @if $breakpoint == large {
-        @media (min-width: 60em) {
-          @content;
-        } //960px
-      }
+      @if $breakpoint == large { @media (min-width: 60em) { @content; } } //960px
     }
 
 
