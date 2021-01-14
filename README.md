@@ -53,7 +53,7 @@ CONTINUED DEVELOPMENT
 LESSONS LEARNED
 1. Utilized a new VS Code extension to help format CSS code (https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-csscomb). Required me to setup a json config file for laying out my preferences.
 
-2. Learned how to use the backdrop filter affect and how to use the @supports CSS at-rule feature query to specify declarations that depend on a browser's support (https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
+2. Learned how to use the backdrop filter affect and how to use the @supports CSS at-rule feature query to specify declarations that depend on a browser's support (https://developer.mozilla.org/en-US/docs/Web/CSS/@supports). Page was tested on Chrome and Firefox.
 
 3. Began learning about responsive images and the differences in writing code for resolution switching for different images sizes, resolution switching for different screen resolutions, and art direction (https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images). Still a lot to learn here!!
 
