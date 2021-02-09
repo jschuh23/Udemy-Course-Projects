@@ -1,0 +1,22 @@
+{
+  "name": "udemy-trillo",
+  "version": "1.0.0",
+  "description": "Udemy Advanced CSS and SASS course - Trillo Project",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "sass --watch scss/main.scss:dist/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jschuh23/Udemy-Trillo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jschuh23/Udemy-Trillo/issues"
+  },
+  "homepage": "https://github.com/jschuh23/Udemy-Trillo#readme",
+  "devDependencies": {
+    "sass": "^1.32.6"
+  }
+}
