@@ -1,0 +1,19 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 0.6em 1.25em;
+  }
+
+  &--primary {
+    color: #fff;
+    background-color: $primary-color;
+    border: none;
+  }
+
+  &--secondary {
+    color: $primary-color;
+    background: none;
+    border: solid 2px $primary-color;
+  }
+}

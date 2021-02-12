@@ -44,4 +44,25 @@ body {
   background-color: #fff;
 }
 
+.container {
+  width: min(90%, 90rem);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  padding: 0.6em 1.25em;
+}
+.btn--primary {
+  color: #fff;
+  background-color: #ea4572;
+  border: none;
+}
+.btn--secondary {
+  color: #ea4572;
+  background: none;
+  border: solid 2px #ea4572;
+}
+
 /*# sourceMappingURL=main.css.map */
