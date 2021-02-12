@@ -2,7 +2,8 @@
   &:link,
   &:visited {
     display: inline-block;
-    padding: 0.6em 1.25em;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
   }
 
   &--primary {
