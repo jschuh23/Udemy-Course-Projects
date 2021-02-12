@@ -1,1 +1,27 @@
+@font-face {
+  font-family: 'aileron';
+  src: url('/assets/Aileron-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'aileron';
+  src: url('/assets/Aileron-Bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aileron';
+  src: url('/assets/Aileron-Thin-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  font-family: 'aileron', Georgia, serif;
+  font-weight: normal;
+  line-height: 1.6;
+  background-color: #fff;
+}
