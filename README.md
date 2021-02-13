@@ -5,9 +5,9 @@ This project followed the design presented in the Udemy course, but I adjusted s
 
 MY ADJUSTMENTS
 1. Mobile-first design with media queries set at:
-    - min-width:37.5em (600px)
-    - min-width:48em (768px)
-    - min-width:60em (960px)
+    - ```min-width:37.5em (600px)```
+    - ```min-width:48em (768px)```
+    - ```min-width:60em (960px)```
 
 2. Used my own color scheme and adjusted it to meet the WCAG 2 AA contrast ratio thresholds
 
@@ -47,13 +47,13 @@ CONTINUED DEVELOPMENT
 
 2. Utilized the BEM (Block Element Modifier) methodology for my naming convention in HTML and CSS
 
-3. Used the clamp() CSS function for most font-sizes to make them more responsive
+3. Used the ```clamp()``` CSS function for most font-sizes to make them more responsive
 
 
 LESSONS LEARNED
 1. Utilized a new VS Code extension to help format CSS code (https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-csscomb). Required me to setup a json config file for laying out my preferences.
 
-2. Learned how to use the backdrop filter affect and how to use the @supports CSS at-rule feature query to specify declarations that depend on a browser's support (https://developer.mozilla.org/en-US/docs/Web/CSS/@supports). Page was tested on Chrome and Firefox.
+2. Learned how to use the backdrop filter affect and how to use the ```@supports``` CSS at-rule feature query to specify declarations that depend on a browser's support (https://developer.mozilla.org/en-US/docs/Web/CSS/@supports). Page was tested on Chrome and Firefox.
 
 3. Began learning about responsive images and the differences in writing code for resolution switching for different images sizes, resolution switching for different screen resolutions, and art direction (https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images). Still a lot to learn here!!
 
@@ -61,6 +61,7 @@ LESSONS LEARNED
 
 5. Learned the best practice for inserting media queries into my Sass code
     
+    ```css
     @mixin respond($breakpoint) {
       @if $breakpoint == small { @media (min-width: 37.5em) { @content; } } //600px
 
@@ -68,6 +69,7 @@ LESSONS LEARNED
 
       @if $breakpoint == large { @media (min-width: 60em) { @content; } } //960px
     }
+    ```
 
 
 
