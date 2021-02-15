@@ -1,7 +1,7 @@
 # Udemy-Trillo
 Trillo Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
 
-MY ADJUSTMENTS
+## MY ADJUSTMENTS
 1. Mobile-first design with media queries set at:
     - min-width:
     - min-width:
@@ -9,7 +9,7 @@ MY ADJUSTMENTS
 
 2. 
 
-CONTINUED DEVELOPMENT
+## CONTINUED DEVELOPMENT
 1. Utilized Sass and created a 7-1 folder structure containing the following folders and files:
     - abstracts
         - _mixins.scss
@@ -31,8 +31,9 @@ CONTINUED DEVELOPMENT
 
 2. Utilized the BEM (Block Element Modifier) methodology for my naming convention in HTML and CSS
 
-3. Used the clamp() CSS function for most font-sizes to make them more responsive
+3. Used the ```clamp()``` CSS function for most font-sizes to make them more responsive
 
 
-LESSONS LEARNED
+## LESSONS LEARNED
 1. Utilized npm scripts to compile sass (dart sass as node sass has been deprecated) instead of the VS Code extension Live SASS Compiler
+2. Learned how to adjust the SVG color when inserted into HTML as an ```<img>``` by changing the ```<path fill="">``` attribute within the SVG code
