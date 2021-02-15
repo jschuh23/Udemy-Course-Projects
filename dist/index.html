@@ -9,40 +9,121 @@
     <title>Trillo - Your all-in-one booking app</title>
   </head>
   <body>
+    <!-- * Header and navigation -->
     <header>
-      <img src="./img/logo.png" alt="Trillo Logo" />
-      <input type="text" />
-      <a href="#" class="btn btn--secondary">Sign In</a>
-      <nav class="nav">
-        <div class="nav__hamburger">
-          <div class="nav__hamburger--line"></div>
-          <div class="nav__hamburger--line"></div>
-          <div class="nav__hamburger--line"></div>
+      <div class="container">
+        <div class="flex--wrapper">
+          <img src="./img/logo.png" alt="Trillo Logo" />
+          <div class="nav__hamburger">
+            <div class="nav__hamburger--line"></div>
+            <div class="nav__hamburger--line"></div>
+            <div class="nav__hamburger--line"></div>
+          </div>
+          <input type="text" />
+          <a href="#" class="btn btn--secondary">Sign In</a>
         </div>
-        <ul class="nav__list">
-          <li class="nav__list--item">
-            <img src="./img/SVG/user-circle-solid.svg" alt="" />
-            <a href="#">Sign In</a>
-          </li>
-          <li class="nav__list--item">
-            <img src="./img/SVG/bed-solid.svg" alt="" />
-            <a href="#">Hotels</a>
-          </li>
-          <li class="nav__list--item">
-            <img src="./img/SVG/aircraft-take-off.svg" alt="" />
-            <a href="#">Flights</a>
-          </li>
-          <li class="nav__list--item">
-            <img src="./img/SVG/car-solid.svg" alt="" />
-            <a href="#">Car Rentals</a>
-          </li>
-          <li class="nav__list--item">
-            <img src="./img/SVG/suitcase-solid.svg" alt="" />
-            <a href="#">Travel Packages</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list--item">
+              <img src="./img/SVG/user-circle-solid.svg" alt="" />
+              <a href="#">Sign In</a>
+            </li>
+            <li class="nav__list--item">
+              <img src="./img/SVG/bed-solid.svg" alt="" />
+              <a href="#">Hotels</a>
+            </li>
+            <li class="nav__list--item">
+              <img src="./img/SVG/aircraft-take-off.svg" alt="" />
+              <a href="#">Flights</a>
+            </li>
+            <li class="nav__list--item">
+              <img src="./img/SVG/car-solid.svg" alt="" />
+              <a href="#">Car Rentals</a>
+            </li>
+            <li class="nav__list--item">
+              <img src="./img/SVG/suitcase-solid.svg" alt="" />
+              <a href="#">Travel Packages</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <div class="container">
+      <div class="grid--wrapper">
+        <!-- * About info -->
+        <img src="./img/hotel-1.jpg" alt="Hotel pools" />
+        <h1>Hotel Las Palmas</h1>
+        <h2>Albufeira, Portugal</h2>
+        <div class="stars"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit
+          voluptate unde nobis non dolores tenetur modi beatae eaque repellendus
+          excepturi aliquam aspernatur sed nesciunt autem doloribus
+          perspiciatis, nisi incidunt corrupti optio vitae molestiae sit.
+          Consequuntur hic et beatae esse.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+          molestiae, nihil deserunt quibusdam provident sequi quisquam molestias
+          nemo. Facere mollitia assumenda nihil ab error officia sapiente
+          facilis sequi voluptatibus obcaecati, perspiciatis, explicabo dolorum
+          blanditiis perferendis!
+        </p>
+
+        <!-- * Amenities info -->
+        <img src="./img/hotel-2.jpg" alt="Hotel overlook" />
+        <h3>Amenities</h3>
+        <h4>Main Features</h4>
+        <ul>
+          <li>Close to the beach</li>
+          <li>Free airport shuttle</li>
+          <li>Perfect for families</li>
+          <li>Pets allowed</li>
+          <li>We speak all languages</li>
+        </ul>
+        <h4>Room</h4>
+        <ul>
+          <li>Free wifi in all rooms</li>
+          <li>Air conditioning and heating</li>
+        </ul>
+        <h4>Dining</h4>
+        <ul>
+          <li>Continental breakfast included</li>
+        </ul>
+        <a href="#" class="btn btn--primary">Book Now</a>
+
+        <!-- * Reviewer info -->
+        <blockquote>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          ducimus corporis facilis modi repellat temporibus!
+        </blockquote>
+        <img src="./img/user-1.jpg" alt="reviewer img" />
+        <ul>
+          <li>Nick Smith</li>
+          <li>Feb 23, 2018</li>
+        </ul>
+        <div class="stars"></div>
+        <blockquote>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam
+          eos architecto beatae asperiores distinctio iure praesentium corporis
+          pariatur modi!
+        </blockquote>
+        <img src="./img/user-2.jpg" alt="reviewer img" />
+        <ul>
+          <li>Mary Thomas</li>
+          <li>Sept 13, 2017</li>
+        </ul>
+        <div class="stars"></div>
+        <a href="#" class="btn btn--secondary">Read all reviews</a>
+        <img src="./img/hotel-3.jpg" alt="Hotel at night" />
+      </div>
+    </div>
+
+    <!-- * Footer -->
+    <footer>
+      <p>&copy; 2021 by Trillo. All rights reserved.</p>
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>
