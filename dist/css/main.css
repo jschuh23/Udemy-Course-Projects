@@ -91,12 +91,41 @@ body {
 
 .nav__hamburger {
   cursor: pointer;
+  position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav__hamburger--line {
   width: 1.8rem;
   height: 0.175rem;
   background-color: #ea4572;
-  margin: 0.3rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav__hamburger--line::before, .nav__hamburger--line::after {
+  content: "";
+  position: absolute;
+  width: 1.8rem;
+  height: 0.175rem;
+  background-color: #ea4572;
+  transition: all 0.5s ease-in-out;
+}
+.nav__hamburger--line::before {
+  transform: translateY(-0.5rem);
+}
+.nav__hamburger--line::after {
+  transform: translateY(0.5rem);
+}
+.nav__hamburger.open .nav__hamburger--line {
+  background-color: transparent;
+}
+.nav__hamburger.open .nav__hamburger--line::before {
+  transform: rotate(45deg);
+}
+.nav__hamburger.open .nav__hamburger--line::after {
+  transform: rotate(-45deg);
 }
 .nav__list {
   background-color: #ea4572;

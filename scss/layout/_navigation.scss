@@ -1,15 +1,54 @@
 .nav {
+  // Hamburger menu
   &__hamburger {
     cursor: pointer;
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    @include flex-center;
 
     &--line {
       width: 1.8rem;
       height: 0.175rem;
       background-color: $primary-color;
-      margin: 0.3rem;
+      transition: all 0.5s ease-in-out;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1.8rem;
+        height: 0.175rem;
+        background-color: $primary-color;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &::before {
+        transform: translateY(-0.5rem);
+      }
+
+      &::after {
+        transform: translateY(0.5rem);
+      }
+    }
+
+    // Hamburger menu animation
+    &.open {
+      .nav__hamburger--line {
+        background-color: transparent;
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
 
+  // Navigation list
   &__list {
     background-color: $primary-color;
     @include flex-center;
