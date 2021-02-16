@@ -19,7 +19,12 @@
     border: solid 2px $primary-color;
   }
 
-  &--header {
+  &--signin {
     display: none;
+  }
+
+  &--book,
+  &--reviews {
+    margin: 1.5rem auto 2rem;
   }
 }

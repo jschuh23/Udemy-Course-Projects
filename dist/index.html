@@ -25,7 +25,9 @@
               alt=""
             />
           </div>
-          <a href="#" class="btn btn--header btn--secondary">Sign In</a>
+          <div class="btn--signin">
+            <a href="#" class="btn btn--secondary">Sign In</a>
+          </div>
         </div>
         <nav class="nav">
           <ul class="nav__list">
@@ -57,18 +59,26 @@
     <div class="container">
       <div class="grid--wrapper">
         <!-- * About info -->
-        <img src="./img/hotel-1.jpg" alt="Hotel pools" />
-        <h1>Hotel Las Palmas</h1>
-        <h2>Albufeira, Portugal</h2>
-        <div class="stars"></div>
-        <p>
+        <img class="hotel__img" src="./img/hotel-1.jpg" alt="Hotel pools" />
+        <div class="about__heading">
+          <h1>Hotel Las Palmas</h1>
+          <h2>Albufeira, Portugal</h2>
+          <div class="stars">
+            <img src="./img/SVG/star-full-white.svg" alt="" />
+            <img src="./img/SVG/star-full-white.svg" alt="" />
+            <img src="./img/SVG/star-full-white.svg" alt="" />
+            <img src="./img/SVG/star-full-white.svg" alt="" />
+            <img src="./img/SVG/star-half-empty-white.svg" alt="" />
+          </div>
+        </div>
+        <p class="about__text">
           Lorem ip ipsum dolor sit amet consectetur adipisicing elit. Maxime
           odit voluptate unde nobis non dolores tenetur modi beatae eaque
           repellendus excepturi aliquam aspernatur sed nesciunt autem doloribus
           perspiciatis, nisi incidunt corrupti optio vitae molestiae sit.
           Consequuntur hic et beatae esse.
         </p>
-        <p>
+        <p class="about__text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
           molestiae, nihil deserunt quibusdam provident sequi quisquam molestias
           nemo. Facere mollitia assumenda nihil ab error officia sapiente
@@ -77,10 +87,10 @@
         </p>
 
         <!-- * Amenities info -->
-        <img src="./img/hotel-2.jpg" alt="Hotel overlook" />
+        <img class="hotel__img" src="./img/hotel-2.jpg" alt="Hotel overlook" />
         <h3>Amenities</h3>
         <h4>Main Features</h4>
-        <ul>
+        <ul class="amenities__features">
           <li>Close to the beach</li>
           <li>Free airport shuttle</li>
           <li>Perfect for families</li>
@@ -88,15 +98,17 @@
           <li>We speak all languages</li>
         </ul>
         <h4>Room</h4>
-        <ul>
+        <ul class="amenities__room">
           <li>Free wifi in all rooms</li>
           <li>Air conditioning and heating</li>
         </ul>
         <h4>Dining</h4>
-        <ul>
+        <ul class="amenities__dining">
           <li>Continental breakfast included</li>
         </ul>
-        <a href="#" class="btn btn--primary">Book Now</a>
+        <div class="btn--book">
+          <a href="#" class="btn btn--primary">Book Now</a>
+        </div>
 
         <!-- * Reviewer info -->
         <blockquote>
@@ -120,8 +132,10 @@
           <li>Sept 13, 2017</li>
         </ul>
         <div class="stars"></div>
-        <a href="#" class="btn btn--secondary">Read all reviews</a>
-        <img src="./img/hotel-3.jpg" alt="Hotel at night" />
+        <div class="btn--reviews">
+          <a href="#" class="btn btn--secondary">Read all reviews</a>
+        </div>
+        <img class="hotel__img" src="./img/hotel-3.jpg" alt="Hotel at night" />
       </div>
     </div>
 
