@@ -22,7 +22,6 @@ Trillo Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
         - _buttons.scss
     - layout
         - _footer.scss
-        - _forms.scss
         - _grid.scss
         - _header.scss
         - _navigation.scss
@@ -37,3 +36,4 @@ Trillo Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
 ## LESSONS LEARNED
 1. Utilized npm scripts to compile sass (dart sass as node sass has been deprecated) instead of the VS Code extension Live SASS Compiler
 2. Learned how to adjust the SVG color when inserted into HTML as an ```<img>``` by changing the ```<path fill="">``` attribute within the SVG code
+3. Used the '''@font-face''' CSS at-rule to specify a custom font-family
