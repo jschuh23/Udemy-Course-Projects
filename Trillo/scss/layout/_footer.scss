@@ -1,0 +1,7 @@
+footer {
+  height: 5rem;
+  margin-top: 2rem;
+  background-color: $primary-color;
+
+  @include flex-center;
+}
