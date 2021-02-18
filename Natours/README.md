@@ -1,7 +1,8 @@
 ![Natours](./design/Natours-project.png)  
 # Natours Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
 
-This project followed the design presented in the Udemy course, but I adjusted some portions to fit more inline with the current techniques I've learned. Overall, it was a great project and I learned a lot of new tehcniques that I can definitely add into future projects.
+This project followed the design presented in the Udemy course, but I adjusted some portions to fit more inline with the current techniques I've learned. Overall, it was a great project and I learned a lot of new tehcniques that I can definitely add into future projects.  
+[Udemy Advanced CSS and SASS](https://www.udemy.com/course/advanced-css-and-sass/)
 
 ## MY ADJUSTMENTS
 1. Mobile-first design with media queries set at:
