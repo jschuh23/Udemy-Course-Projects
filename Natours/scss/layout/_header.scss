@@ -1,0 +1,59 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.5),
+      rgba($color-primary-light, 0.5)
+    ),
+    url(../img/hero-small.jpg);
+  background-position: center;
+  background-size: cover;
+
+  @include respond(small) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.5),
+        rgba($color-primary-light, 0.5)
+      ),
+      url(../img/hero.jpg);
+  }
+
+  &__logo {
+    @include respond(large) {
+      max-width: initial;
+    }
+  }
+
+  &__text--box {
+    @include ab-pos-center;
+  }
+}
+
+.heading__main {
+  backface-visibility: hidden;
+
+  &--title {
+    display: block;
+    padding-left: 2rem; //offset letter spacing
+    letter-spacing: 2rem;
+    animation: moveInLeft 2s ease-out;
+
+    @include respond(small) {
+      padding-left: 3.5rem; //offset letter spacing
+      letter-spacing: 3.5rem;
+    }
+  }
+
+  &--subtitle {
+    display: block;
+    padding-left: 0.8rem; //offset letter spacing
+    letter-spacing: 0.8rem;
+    animation: moveInRight 2s ease-out;
+
+    @include respond(small) {
+      padding-left: 1.75rem; //offset letter spacing
+      letter-spacing: 1.75rem;
+    }
+  }
+}

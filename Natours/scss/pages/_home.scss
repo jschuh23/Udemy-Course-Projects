@@ -1,0 +1,288 @@
+//ABOUT SECTION
+.section__about--flex {
+  @include respond(large) {
+    display: flex;
+  }
+}
+
+.section__about--info {
+  @include respond(large) {
+    margin-right: 4rem;
+  }
+}
+
+.section__about--imgs {
+  @include respond(small) {
+    display: flex;
+  }
+
+  @include respond(large) {
+    position: relative;
+    width: 100%;
+  }
+
+  .photo {
+    @include respond(large) {
+      position: absolute;
+      width: 60%;
+      outline-offset: 1rem;
+      transition: all 0.2s;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+      z-index: 10;
+    }
+
+    &:hover {
+      @include respond(large) {
+        outline: 8px solid $color-green;
+        transform: scale(1.1) translateY(-0.5rem);
+        box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+        z-index: 20;
+      }
+    }
+  }
+
+  &:hover .photo:not(:hover) {
+    @include respond(large) {
+      transform: scale(0.95);
+    }
+  }
+
+  .photo--1 {
+    @include respond(large) {
+      top: 1;
+      left: 0;
+      margin: 0;
+    }
+  }
+
+  .photo--2 {
+    @include respond(large) {
+      top: 5rem;
+      right: 1.5rem;
+      margin: 0;
+    }
+  }
+
+  .photo--3 {
+    @include respond(large) {
+      top: 12rem;
+      left: 3rem;
+    }
+  }
+
+  .photo--1,
+  .photo--2 {
+    display: none;
+
+    @include respond(small) {
+      display: initial;
+      margin: 0 1rem 0 0;
+    }
+  }
+}
+
+// FEATURES SECTION
+.section__features {
+  display: grid;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.5),
+      rgba($color-primary-light, 0.5)
+    ),
+    url(../img/nat-4.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &--info {
+    max-width: $features-info-width;
+    background-color: rgba($color-white, 0.7);
+
+    @include center-self;
+
+    @include respond(large) {
+      height: 30rem;
+    }
+
+    @supports (backdrop-filter: blur(7px)) or
+      (-webkit-backdrop-filter: blur(7px)) {
+      @include filter-blur;
+    }
+  }
+
+  .features--grid {
+    @include respond(small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.features--grid,
+.tours--grid {
+  gap: 3rem;
+
+  @include grid-1col;
+}
+
+// TOURS SECTION
+.section__tours {
+  display: grid;
+
+  .tours--grid {
+    @include respond(large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .card {
+    @include respond(large) {
+      width: 30rem;
+      height: 55rem;
+    }
+
+    &__content {
+      max-width: $card-width;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+      @include center-self;
+
+      @include respond(large) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 2s;
+      }
+    }
+
+    &__front,
+    &__back {
+      @include respond(large) {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+
+        @include absolute-pos;
+      }
+    }
+
+    &__back {
+      @include respond(large) {
+        border-radius: 5px;
+        background-color: $bg-primary-light;
+        transform: rotateY(0.5turn);
+      }
+    }
+
+    &__heading {
+      img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      }
+    }
+
+    &__list {
+      ul {
+        width: 50%;
+        margin: 0 auto;
+
+        @include respond(large) {
+          width: 70%;
+        }
+
+        li {
+          &:not(:last-child) {
+            border-bottom: 1px dashed $color-primary-light;
+          }
+        }
+      }
+    }
+
+    &__booking {
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+
+      @include respond(large) {
+        margin-top: 8rem;
+      }
+
+      .price {
+        @include respond(large) {
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+}
+
+.card:hover .card__content {
+  @include respond(large) {
+    transform: rotateY(0.5turn);
+  }
+}
+
+//STORIES SECTION
+.section__stories {
+  position: relative;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 0.3;
+    z-index: -1;
+
+    @include absolute-pos;
+  }
+}
+
+.story {
+  max-width: $story-width;
+  margin: 0 auto 3rem;
+  background-color: rgba($color-white, 0.7);
+
+  @include respond(large) {
+    max-width: 100%;
+  }
+
+  @supports (backdrop-filter: blur(7px)) or (-webkit-backdrop-filter: blur(7px)) {
+    @include filter-blur;
+  }
+
+  figure {
+    position: relative;
+    float: left;
+    width: 10rem;
+    height: 10rem;
+
+    shape-outside: circle(50% at 50% 50%);
+  }
+
+  img {
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover figcaption {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  &:hover img {
+    filter: blur(2px) brightness(80%);
+  }
+}
