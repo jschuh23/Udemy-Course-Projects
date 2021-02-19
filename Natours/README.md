@@ -2,7 +2,7 @@
 # Natours Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
 
 This project followed the design presented in the Udemy course, but I adjusted some portions to fit more inline with the current techniques I've learned. Overall, it was a great project and I learned a lot of new tehcniques that I can definitely add into future projects.  
-[Udemy Advanced CSS and SASS](https://www.udemy.com/course/advanced-css-and-sass/)
+[Advanced CSS and SASS: Flexbox, Grid, Animations and more](https://www.udemy.com/course/advanced-css-and-sass/)
 
 ## MY ADJUSTMENTS
 1. Mobile-first design with media queries set at:
@@ -52,11 +52,14 @@ This project followed the design presented in the Udemy course, but I adjusted s
 
 
 ## LESSONS LEARNED
-1. Utilized a new VS Code extension to help format CSS code [CSS Comb](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-csscomb). Required me to setup a json config file for laying out my preferences.
+1. Utilized a new VS Code extension to help format CSS code. Required me to setup a json config file for laying out my preferences.
+  [CSS Comb](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-csscomb)
 
-2. Learned how to use the backdrop filter affect and how to use the ```@supports``` CSS at-rule feature query to specify declarations that depend on a browser's support [MDN @supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports). Page was tested on Chrome and Firefox.
+2. Learned how to use the backdrop filter affect and how to use the ```@supports``` CSS at-rule feature query to specify declarations that depend on a browser's support. Page was tested on Chrome and Firefox.
+  [MDN @supports](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)  
 
-3. Began learning about responsive images and the differences in writing code for resolution switching for different images sizes, resolution switching for different screen resolutions, and art direction [MDN Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images). Still a lot to learn here!!
+3. Began learning about responsive images and the differences in writing code for resolution switching for different images sizes, resolution switching for different screen resolutions, and art direction. Still a lot to learn here!!
+  [MDN Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 
 4. Learned how to create a CSS-only modal
 
