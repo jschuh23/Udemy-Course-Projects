@@ -12,20 +12,20 @@
     <!-- * Header and navigation -->
     <header>
       <div class="container">
-        <div class="flex--wrapper">
+        <div class="flex__header--wrapper">
           <img class="logo" src="./img/logo.png" alt="Trillo Logo" />
           <div class="nav__hamburger">
             <div class="nav__hamburger--line"></div>
           </div>
-          <div class="search">
-            <input class="search--input" type="text" />
+          <div class="search" role="search">
+            <input class="search__input" type="text" />
             <img
-              class="search--img"
+              class="search__img"
               src="./img/SVG/magnifying-glass.svg"
-              alt=""
+              alt="Search"
             />
           </div>
-          <div class="btn--signin">
+          <div class="btn__signin">
             <a href="#" class="btn btn--secondary">Sign In</a>
           </div>
         </div>
@@ -106,33 +106,56 @@
         <ul class="amenities__dining">
           <li>Continental breakfast included</li>
         </ul>
-        <div class="btn--book">
+        <div class="btn__book">
           <a href="#" class="btn btn--primary">Book Now</a>
         </div>
 
         <!-- * Reviewer info -->
-        <blockquote>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          ducimus corporis facilis modi repellat temporibus!
-        </blockquote>
-        <img src="./img/user-1.jpg" alt="reviewer img" />
-        <ul>
-          <li>Nick Smith</li>
-          <li>Feb 23, 2018</li>
-        </ul>
-        <div class="stars"></div>
-        <blockquote>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam
-          eos architecto beatae asperiores distinctio iure praesentium corporis
-          pariatur modi!
-        </blockquote>
-        <img src="./img/user-2.jpg" alt="reviewer img" />
-        <ul>
-          <li>Mary Thomas</li>
-          <li>Sept 13, 2017</li>
-        </ul>
-        <div class="stars"></div>
-        <div class="btn--reviews">
+        <div class="review review--one">
+          <blockquote>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+            reprehenderit ut optio id debitis in, fugit doloribus numquam soluta
+            dignissimos? Cumque maxime in modi tempora.
+          </blockquote>
+          <div class="flex__review--wrapper">
+            <img src="./img/user-1.jpg" alt="reviewer img" />
+            <ul>
+              <li>Nick Smith</li>
+              <li>Feb 23, 2018</li>
+            </ul>
+          </div>
+          <div class="stars">
+            <img src="./img/SVG/star-full-primary.svg" alt="" />
+            <img src="./img/SVG/star-full-primary.svg" alt="" />
+            <img src="./img/SVG/star-full-primary.svg" alt="" />
+            <img src="./img/SVG/star-full-primary.svg" alt="" />
+            <img src="./img/SVG/star-half-empty-primary.svg" alt="" />
+          </div>
+        </div>
+        <div class="review review--two">
+          <blockquote>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A possimus
+            consequuntur quibusdam aperiam, quas nesciunt delectus vel cum
+            libero expedita labore explicabo, magni voluptates eius autem
+            officia alias! Quidem architecto fugiat, dolorum esse aspernatur
+            eius.
+          </blockquote>
+          <div class="flex__review--wrapper flex--wrapper">
+            <img src="./img/user-2.jpg" alt="reviewer img" />
+            <ul>
+              <li>Mary Thomas</li>
+              <li>Sept 13, 2017</li>
+            </ul>
+          </div>
+          <div class="stars">
+            <img src="./img/SVG/star-full-primary.svg" alt="" />
+            <img src="./img/SVG/star-full-primary.svg" alt="" />
+            <img src="./img/SVG/star-full-primary.svg" alt="" />
+            <img src="./img/SVG/star-half-empty-primary.svg" alt="" />
+            <img src="./img/SVG/empty-star-primary.svg" alt="" />
+          </div>
+        </div>
+        <div class="btn__reviews">
           <a href="#" class="btn btn--secondary">Read all reviews</a>
         </div>
         <img class="hotel__img" src="./img/hotel-3.jpg" alt="Hotel at night" />
