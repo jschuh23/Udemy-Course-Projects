@@ -5,14 +5,14 @@
 
 .about__heading {
   flex-direction: column;
-  margin-top: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: solid 3px $primary-color;
+  margin-top: $margin-top-lg;
+  padding-bottom: $padding-bottom-md;
+  @include border-bottom;
 
   @include flex-center;
 
   & h2 {
-    margin-bottom: 1rem;
+    margin-bottom: $margin-bottom-sm;
   }
 
   & .stars {
@@ -31,21 +31,21 @@
 }
 
 .about__text:nth-of-type(1) {
-  padding: 1.5rem 0;
+  padding: $padding-top-md 0 $padding-bottom-md;
 }
 
 .about__text:nth-of-type(2) {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: solid 3px $primary-color;
+  margin-bottom: $margin-bottom-md;
+  padding-bottom: $padding-bottom-md;
+  @include border-bottom;
 }
 
 h3 {
-  margin-top: 2rem;
+  margin-top: $margin-top-lg;
 }
 
 h4 {
-  margin: 1rem 0 0.3rem;
+  margin: $margin-top-sm 0 0.3rem;
 }
 
 .review {
@@ -54,12 +54,12 @@ h4 {
   background-color: $secondary-color;
 
   &--one {
-    margin-bottom: 2rem;
+    margin-bottom: $margin-bottom-lg;
   }
 
   blockquote {
     position: relative;
-    padding-bottom: 1rem;
+    padding-bottom: $padding-bottom-sm;
   }
 
   blockquote::before {
@@ -73,11 +73,11 @@ h4 {
     font-size: 5rem;
   }
 
-  .flex__review--wrapper {
+  .review__flex--wrapper {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: $padding-bottom-sm;
 
     img {
       width: 4rem;

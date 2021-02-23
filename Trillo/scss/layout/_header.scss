@@ -1,11 +1,11 @@
-.flex__header--wrapper {
+.header__flex--wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: solid 3px $primary-color;
+  margin: $margin-top-sm 0 $margin-bottom-lg;
+  padding-bottom: $padding-bottom-md;
+  @include border-bottom;
 
   .logo {
     width: 20%;
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: $margin-top-sm;
 
     &__input {
       width: 100%;

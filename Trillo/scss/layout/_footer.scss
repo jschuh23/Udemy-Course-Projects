@@ -1,6 +1,6 @@
 footer {
   height: 5rem;
-  margin-top: 2rem;
+  margin-top: $margin-top-lg;
   background-color: $primary-color;
 
   @include flex-center;
