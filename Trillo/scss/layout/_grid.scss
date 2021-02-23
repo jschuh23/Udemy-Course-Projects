@@ -1,4 +1,21 @@
 .grid--wrapper {
   display: grid;
   grid-template-columns: 1fr;
+
+  @include respond(medium) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      'img1 img1 img2 img2 img3 img3'
+      'abhead abhead abhead abhead abhead abhead'
+      'abtext1 abtext1 abtext1 rev1 rev1 rev1'
+      'abtext2 abtext2 abtext2 rev1 rev1 rev1'
+      'h3amen . . . . .'
+      'h4feat . . rev2 rev2 rev2'
+      'ulfeat ulfeat ulfeat rev2 rev2 rev2'
+      'h4room . . rev2 rev2 rev2'
+      'ulroom ulroom ulroom rev2 rev2 rev2'
+      'h4dine . . . . . '
+      'uldine uldine . . btnrev btnrev'
+      '. btnbook . . . .';
+  }
 }

@@ -8,6 +8,10 @@
 
     @include flex-center;
 
+    @include respond(small) {
+      order: 3;
+    }
+
     &--line {
       width: 1.8rem;
       height: 0.175rem;
@@ -63,6 +67,10 @@
     pointer-events: none;
 
     @include flex-center;
+
+    @include respond(small) {
+      top: 5rem;
+    }
 
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
 

@@ -1,15 +1,39 @@
+// Main images
 .hotel__img {
   border-radius: 5px;
   box-shadow: 10px 5px 5px #686868;
+
+  &--1 {
+    @include respond(medium) {
+      grid-area: img1;
+    }
+  }
+
+  &--2 {
+    @include respond(medium) {
+      grid-area: img2;
+    }
+  }
+
+  &--3 {
+    @include respond(medium) {
+      grid-area: img3;
+    }
+  }
 }
 
+// About info
 .about__heading {
   flex-direction: column;
   margin-top: $margin-top-lg;
   padding-bottom: $padding-bottom-md;
-  @include border-bottom;
 
+  @include border-bottom;
   @include flex-center;
+  @include respond(medium) {
+    flex-direction: row;
+    grid-area: abhead;
+  }
 
   & h2 {
     margin-bottom: $margin-bottom-sm;
@@ -32,22 +56,69 @@
 
 .about__text:nth-of-type(1) {
   padding: $padding-top-md 0 $padding-bottom-md;
+
+  @include respond(medium) {
+    grid-area: abtext1;
+  }
 }
 
 .about__text:nth-of-type(2) {
   margin-bottom: $margin-bottom-md;
   padding-bottom: $padding-bottom-md;
+
   @include border-bottom;
+  @include respond(medium) {
+    grid-area: abtext2;
+  }
 }
 
+// Amenities info
 h3 {
   margin-top: $margin-top-lg;
+
+  @include respond(medium) {
+    grid-area: h3amen;
+  }
 }
 
-h4 {
+.amenities__header--features,
+.amenities__header--room,
+.amenities__header--dining {
   margin: $margin-top-sm 0 0.3rem;
 }
 
+.amenities__header--features {
+  @include respond(medium) {
+    grid-area: h4feat;
+  }
+}
+.amenities__list--features {
+  @include respond(medium) {
+    grid-area: ulfeat;
+  }
+}
+.amenities__header--room {
+  @include respond(medium) {
+    grid-area: h4room;
+  }
+}
+.amenities__list--room {
+  @include respond(medium) {
+    grid-area: ulroom;
+  }
+}
+.amenities__header--dining {
+  @include respond(medium) {
+    grid-area: h4dine;
+  }
+}
+.amenities__list--dining {
+  @include respond(medium) {
+    grid-area: uldine;
+  }
+}
+
+// Reviewer info
 .review {
   padding: 1.75rem 1.25rem;
   border-radius: 5px;
@@ -55,6 +126,16 @@ h4 {
 
   &--one {
     margin-bottom: $margin-bottom-lg;
+
+    @include respond(medium) {
+      grid-area: rev1;
+    }
+  }
+
+  &--two {
+    @include respond(medium) {
+      grid-area: rev2;
+    }
   }
 
   blockquote {

@@ -7,9 +7,17 @@
   padding-bottom: $padding-bottom-md;
   @include border-bottom;
 
+  @include respond(small) {
+    flex-wrap: nowrap;
+  }
+
   .logo {
-    width: 20%;
-    height: 20%;
+    width: 3.75rem;
+    height: 2.5rem;
+
+    @include respond(small) {
+      order: 1;
+    }
   }
 
   .search {
@@ -18,6 +26,12 @@
     align-items: center;
     width: 100%;
     margin-top: $margin-top-sm;
+
+    @include respond(small) {
+      order: 2;
+      width: 60%;
+      margin-top: 0;
+    }
 
     &__input {
       width: 100%;

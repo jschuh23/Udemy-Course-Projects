@@ -27,4 +27,16 @@
   &__reviews {
     margin: $margin-top-md auto $margin-bottom-lg;
   }
+
+  &__book {
+    @include respond(medium) {
+      grid-area: btnbook;
+    }
+  }
+
+  &__reviews {
+    @include respond(medium) {
+      grid-area: btnrev;
+    }
+  }
 }
