@@ -4,6 +4,8 @@
 This project followed the design presented in the Udemy course, but I adjusted some portions to fit more inline with the current techniques I've learned. Overall, it was a great project and I learned a lot of new tehcniques that I can definitely add into future projects.  
 [Advanced CSS and SASS: Flexbox, Grid, Animations and more](https://www.udemy.com/course/advanced-css-and-sass/)
 
+Please view my final project at https://jschuh23.github.io/Udemy-Course-Projects/Natours/index.html
+
 ## MY ADJUSTMENTS
 1. Mobile-first design with media queries set at:
     - ```min-width:37.5em (600px)```
