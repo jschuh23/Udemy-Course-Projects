@@ -69,7 +69,9 @@ Please view my final project at https://jschuh23.github.io/Udemy-Course-Projects
 
 4. Learned how to create a CSS-only modal
 
-5. Learned the best practice for inserting media queries into my Sass code
+5. Researched and learned about the `.sr-only` class to make my hidden form radio button inputs accessible to screen readers. 
+
+6. Learned the best practice for inserting media queries into my Sass code
 
     ```css
     @mixin respond($breakpoint) {
@@ -92,5 +94,3 @@ Please view my final project at https://jschuh23.github.io/Udemy-Course-Projects
         } //960px
     }
     ```
-
-    6. Researched and learned about the `.sr-only` class to make my hidden form radio button inputs accessible to screen readers.
