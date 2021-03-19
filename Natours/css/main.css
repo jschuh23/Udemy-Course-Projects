@@ -618,6 +618,7 @@ body {
   height: 100vh;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+  overflow-x: hidden;
   opacity: 0;
   z-index: 15;
 }

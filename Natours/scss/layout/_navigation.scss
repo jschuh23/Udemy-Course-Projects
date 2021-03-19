@@ -1,180 +1,181 @@
 .navigation {
-  @include respond(medium) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__checkbox {
-    display: none;
-  }
-
-  &__button {
-    position: absolute;
-    top: 1.8rem;
-    right: 2rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    background-color: $color-white;
-    cursor: pointer;
-    z-index: 20;
-
     @include respond(medium) {
-      display: none;
-    }
-  }
-
-  &__background {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background-image: radial-gradient($color-primary, $color-primary-dark);
-    transition: transform 1s;
-    z-index: 10;
-
-    @include respond(medium) {
-      display: none;
-    }
-  }
-
-  &__nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 0;
-    height: 100vh;
-    transition: opacity 1s;
-    opacity: 0;
-    z-index: 15;
-
-    @include respond(medium) {
-      position: initial;
-      width: 100%;
-      height: 7rem;
-      opacity: 1;
-    }
-  }
-
-  &__list {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    @include respond(medium) {
-      position: initial;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-  }
-
-  //Functionality
-  &__link {
-    &:link,
-    &:visited {
-      display: inline-block;
-      padding: 1rem 2rem;
-      border-bottom: 2px solid transparent;
-      background-image: linear-gradient(
-        120deg,
-        transparent 0%,
-        transparent 50%,
-        $color-white 50%
-      );
-      background-size: 250%;
-      transition: all 0.4s;
-
-      @include respond(medium) {
-        background-image: none;
-        background-size: initial;
-        transition: none;
-      }
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    &:hover,
-    &:active {
-      background-position: 100%;
-
-      @include respond(medium) {
-        border-bottom: 2px solid $color-primary-dark;
-        background-position: initial;
-      }
+    &__checkbox {
+        display: none;
     }
 
-    &--btn:link,
-    &--btn:visited {
-      @include respond(medium) {
-        margin: 0;
-      }
-    }
-  }
+    &__button {
+        position: absolute;
+        top: 1.8rem;
+        right: 2rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: $color-white;
+        cursor: pointer;
+        z-index: 20;
 
-  &__checkbox:checked ~ &__background {
-    transform: scale(45);
-  }
-
-  &__checkbox:checked ~ &__nav {
-    width: 100%;
-    opacity: 1;
-  }
-
-  //Hamburger Menu
-  &__icon {
-    position: relative;
-    margin-top: 1.6rem;
-
-    &,
-    &::before,
-    &::after {
-      display: inline-block;
-      width: 1.5rem;
-      height: 2px;
-      background-color: $color-primary-dark;
+        @include respond(medium) {
+            display: none;
+        }
     }
 
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      transition: all 0.2s;
+    &__background {
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-image: radial-gradient($color-primary, $color-primary-dark);
+        transition: transform 1s;
+        z-index: 10;
+
+        @include respond(medium) {
+            display: none;
+        }
     }
 
-    &::before {
-      top: -0.5rem;
+    &__nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        height: 100vh;
+        transition: opacity 1s;
+        overflow-x: hidden;
+        opacity: 0;
+        z-index: 15;
+
+        @include respond(medium) {
+            position: initial;
+            width: 100%;
+            height: 7rem;
+            opacity: 1;
+        }
     }
 
-    &::after {
-      top: 0.5rem;
+    &__list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include respond(medium) {
+            position: initial;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
     }
-  }
 
-  &__button:hover &__icon::before {
-    top: -0.7rem;
-  }
+    //Functionality
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid transparent;
+            background-image: linear-gradient(
+                120deg,
+                transparent 0%,
+                transparent 50%,
+                $color-white 50%
+            );
+            background-size: 250%;
+            transition: all 0.4s;
 
-  &__button:hover &__icon::after {
-    top: 0.7rem;
-  }
+            @include respond(medium) {
+                background-image: none;
+                background-size: initial;
+                transition: none;
+            }
+        }
 
-  &__checkbox:checked + &__button &__icon {
-    background-color: transparent;
-  }
+        &:hover,
+        &:active {
+            background-position: 100%;
 
-  &__checkbox:checked + &__button &__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-  }
+            @include respond(medium) {
+                border-bottom: 2px solid $color-primary-dark;
+                background-position: initial;
+            }
+        }
 
-  &__checkbox:checked + &__button &__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-  }
+        &--btn:link,
+        &--btn:visited {
+            @include respond(medium) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(45);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        width: 100%;
+        opacity: 1;
+    }
+
+    //Hamburger Menu
+    &__icon {
+        position: relative;
+        margin-top: 1.6rem;
+
+        &,
+        &::before,
+        &::after {
+            display: inline-block;
+            width: 1.5rem;
+            height: 2px;
+            background-color: $color-primary-dark;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+
+        &::before {
+            top: -0.5rem;
+        }
+
+        &::after {
+            top: 0.5rem;
+        }
+    }
+
+    &__button:hover &__icon::before {
+        top: -0.7rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 0.7rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
 }
