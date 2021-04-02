@@ -41,6 +41,10 @@ h1 {
     font-size: 1.2rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+
+    @include respond(xlarge) {
+        font-size: 2rem;
+    }
 }
 
 h2 {
@@ -49,12 +53,23 @@ h2 {
     @include respond(medium) {
         font-size: 0.8rem;
     }
+    @include respond(large) {
+        font-size: 1rem;
+    }
+    @include respond(xlarge) {
+        font-size: 1.3rem;
+    }
 }
 
 h4 {
     font-weight: normal;
     text-decoration: underline;
     text-underline-offset: 0.25rem;
+}
+
+blockquote,
+.flex--wrapper ul {
+    font-size: 0.8rem;
 }
 
 footer p {
