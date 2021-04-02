@@ -1,6 +1,6 @@
 # Udemy-Trillo
 Trillo Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
-https://jschuh23.github.io/Udemy-Course-Projects/Trillo/index.html
+https://jschuh23.github.io/Udemy-Course-Projects/Trillo/dist/index.html
 
 ## MY ADJUSTMENTS
 1. Mobile-first design with media queries set at:
