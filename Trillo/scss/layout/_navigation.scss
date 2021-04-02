@@ -1,97 +1,108 @@
 .nav {
-  // Hamburger menu
-  &__hamburger {
-    position: relative;
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
+    // Hamburger menu
+    &__hamburger {
+        position: relative;
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
 
-    @include flex-center;
+        @include flex-center;
+        @include respond(small) {
+            order: 3;
+        }
+        @include respond(large) {
+            display: none;
+        }
 
-    @include respond(small) {
-      order: 3;
+        &--line {
+            width: 1.8rem;
+            height: 0.175rem;
+            background-color: $primary-color;
+            transition: all 0.5s ease-in-out;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1.8rem;
+                height: 0.175rem;
+                background-color: $primary-color;
+                transition: all 0.5s ease-in-out;
+            }
+
+            &::before {
+                transform: translateY(-0.5rem);
+            }
+
+            &::after {
+                transform: translateY(0.5rem);
+            }
+        }
+
+        // Hamburger menu animation
+        &.open {
+            .nav__hamburger--line {
+                background-color: transparent;
+
+                &::before {
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
     }
 
-    &--line {
-      width: 1.8rem;
-      height: 0.175rem;
-      background-color: $primary-color;
-      transition: all 0.5s ease-in-out;
-
-      &::before,
-      &::after {
-        content: '';
+    // Navigation list
+    &__list {
         position: absolute;
-        width: 1.8rem;
-        height: 0.175rem;
+        top: 7.9rem;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        min-height: 80vh;
         background-color: $primary-color;
-        transition: all 0.5s ease-in-out;
-      }
+        transition: all 1s ease-out;
+        clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+        pointer-events: none;
 
-      &::before {
-        transform: translateY(-0.5rem);
-      }
-
-      &::after {
-        transform: translateY(0.5rem);
-      }
-    }
-
-    // Hamburger menu animation
-    &.open {
-      .nav__hamburger--line {
-        background-color: transparent;
-
-        &::before {
-          transform: rotate(45deg);
+        @include flex-center;
+        @include respond(small) {
+            top: 5rem;
+        }
+        @include respond(large) {
+            position: initial;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: auto;
+            min-height: 0;
+            margin-bottom: $margin-bottom-lg;
+            transition: none;
+            clip-path: none;
         }
 
-        &::after {
-          transform: rotate(-45deg);
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+
+        &.open {
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            pointer-events: all;
+
+            -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
         }
-      }
+
+        &--item {
+            margin: 1.25rem 0;
+
+            @include flex-center;
+        }
+
+        &--item img {
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+        }
     }
-  }
-
-  // Navigation list
-  &__list {
-    position: absolute;
-    top: 7.9rem;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    min-height: 80vh;
-    background-color: $primary-color;
-    transition: all 1s ease-out;
-    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-    pointer-events: none;
-
-    @include flex-center;
-
-    @include respond(small) {
-      top: 5rem;
-    }
-
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-
-    &.open {
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-      pointer-events: all;
-
-      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-    }
-
-    &--item {
-      margin: 1.25rem 0;
-
-      @include flex-center;
-    }
-
-    &--item img {
-      display: inline-block;
-      width: 1.25rem;
-      height: 1.25rem;
-      margin-right: 0.5rem;
-    }
-  }
 }
