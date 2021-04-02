@@ -3,6 +3,6 @@
     grid-template-columns: 1fr;
 
     @include respond(medium) {
-        grid-template-columns: 0 repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 }
