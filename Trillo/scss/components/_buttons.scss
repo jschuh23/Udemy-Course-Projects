@@ -1,42 +1,46 @@
 .btn {
-  &:link,
-  &:visited {
-    padding: 0.5em 1.5em;
-    border-radius: 5px;
-  }
-
-  &--primary {
-    display: inline-block;
-    color: #fff;
-    background-color: $primary-color;
-    border: none;
-  }
-
-  &--secondary {
-    display: inline-block;
-    color: $primary-color;
-    background: none;
-    border: solid 2px $primary-color;
-  }
-
-  &__signin {
-    display: none;
-  }
-
-  &__book,
-  &__reviews {
-    margin: $margin-top-md auto $margin-bottom-lg;
-  }
-
-  &__book {
-    @include respond(medium) {
-      grid-area: btnbook;
+    &:link,
+    &:visited {
+        padding: 0.5em 1.5em;
+        border-radius: 5px;
     }
-  }
 
-  &__reviews {
-    @include respond(medium) {
-      grid-area: btnrev;
+    &--primary {
+        display: inline-block;
+        color: #fff;
+        background-color: $primary-color;
+        border: none;
     }
-  }
+
+    &--secondary {
+        display: inline-block;
+        color: $primary-color;
+        background: none;
+        border: solid 2px $primary-color;
+    }
+
+    &__signin {
+        display: none;
+    }
+
+    &__book,
+    &__reviews {
+        margin: $margin-top-md auto $margin-bottom-lg;
+    }
+
+    &__book {
+        @include respond(medium) {
+            grid-column: 2 / span 3;
+            grid-row: 11 / 12;
+            margin: 0 auto;
+            place-self: end;
+        }
+    }
+
+    &__reviews {
+        @include respond(medium) {
+            grid-column: 5 / span 3;
+            grid-row: 11 / 12;
+        }
+    }
 }

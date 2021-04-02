@@ -1,11 +1,12 @@
 // Main images
 .hotel__img {
     border-radius: 5px;
-    box-shadow: 0px 5px 10px #686868;
+    box-shadow: 5px 5px 10px 0px #ccc;
 
     &--1 {
         @include respond(medium) {
-            grid-area: img1;
+            grid-column: 2 / span 2;
+            grid-row: 1 / 2;
             width: 95%;
             margin: 0 auto;
         }
@@ -13,7 +14,8 @@
 
     &--2 {
         @include respond(medium) {
-            grid-area: img2;
+            grid-column: 4 / span 2;
+            grid-row: 1 / 2;
             width: 95%;
             margin: 0 auto;
         }
@@ -21,7 +23,8 @@
 
     &--3 {
         @include respond(medium) {
-            grid-area: img3;
+            grid-column: 6 / span 2;
+            grid-row: 1 / 2;
             width: 95%;
             margin: 0 auto;
         }
@@ -38,7 +41,8 @@
     @include flex-center;
     @include respond(medium) {
         flex-direction: row;
-        grid-area: abhead;
+        grid-column: 2 / span 6;
+        grid-row: 2 / 3;
     }
 
     & h1 {
@@ -82,7 +86,9 @@
     padding: $padding-top-md 0 $padding-bottom-md;
 
     @include respond(medium) {
-        grid-area: abtext1;
+        grid-column: 2 / span 3;
+        grid-row: 3 / 4;
+        margin-right: 2rem;
     }
 }
 
@@ -92,7 +98,9 @@
 
     @include border-bottom;
     @include respond(medium) {
-        grid-area: abtext2;
+        grid-column: 2 / span 3;
+        grid-row: 4 / 5;
+        margin-right: 2rem;
     }
 }
 
@@ -101,7 +109,9 @@ h3 {
     margin-top: $margin-top-lg;
 
     @include respond(medium) {
-        grid-area: h3amen;
+        grid-column: 2 / span 6;
+        grid-row: 5 / 6;
+        margin-top: 0;
     }
 }
 
@@ -113,32 +123,38 @@ h3 {
 
 .amenities__header--features {
     @include respond(medium) {
-        grid-area: h4feat;
+        grid-column: 2 / span 3;
+        grid-row: 6 / 7;
     }
 }
 .amenities__list--features {
     @include respond(medium) {
-        grid-area: ulfeat;
+        grid-column: 2 / span 3;
+        grid-row: 7 / 8;
     }
 }
 .amenities__header--room {
     @include respond(medium) {
-        grid-area: h4room;
+        grid-column: 2 / span 3;
+        grid-row: 8 / 9;
     }
 }
 .amenities__list--room {
     @include respond(medium) {
-        grid-area: ulroom;
+        grid-column: 2 / span 3;
+        grid-row: 9 / 10;
     }
 }
 .amenities__header--dining {
     @include respond(medium) {
-        grid-area: h4dine;
+        grid-column: 2 / span 3;
+        grid-row: 10 / 11;
     }
 }
 .amenities__list--dining {
     @include respond(medium) {
-        grid-area: uldine;
+        grid-column: 2 / span 3;
+        grid-row: 11 / 12;
     }
 }
 
@@ -152,13 +168,17 @@ h3 {
         margin-bottom: $margin-bottom-lg;
 
         @include respond(medium) {
-            grid-area: rev1;
+            grid-column: 5 / span 3;
+            grid-row: 3 / 5;
+            place-self: center;
         }
     }
 
     &--two {
         @include respond(medium) {
-            grid-area: rev2;
+            grid-column: 5 / span 3;
+            grid-row: 5 / 11;
+            place-self: center;
         }
     }
 

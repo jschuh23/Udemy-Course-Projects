@@ -234,8 +234,7 @@ footer {
 }
 @media (min-width: 37.5em) {
   .grid--wrapper {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "img1 img1 img2 img2 img3 img3" "abhead abhead abhead abhead abhead abhead" "abtext1 abtext1 abtext1 rev1 rev1 rev1" "abtext2 abtext2 abtext2 rev1 rev1 rev1" "h3amen . . . . ." "h4feat . . rev2 rev2 rev2" "ulfeat ulfeat ulfeat rev2 rev2 rev2" "h4room . . rev2 rev2 rev2" "ulroom ulroom ulroom rev2 rev2 rev2" "h4dine . . . . . " "uldine uldine . . btnrev btnrev" ". btnbook . . . .";
+    grid-template-columns: 0px repeat(6, 1fr);
   }
 }
 
@@ -263,36 +262,43 @@ footer {
 }
 @media (min-width: 37.5em) {
   .btn__book {
-    grid-area: btnbook;
+    grid-column: 2/span 3;
+    grid-row: 11/12;
+    margin: 0 auto;
+    place-self: end;
   }
 }
 @media (min-width: 37.5em) {
   .btn__reviews {
-    grid-area: btnrev;
+    grid-column: 5/span 3;
+    grid-row: 11/12;
   }
 }
 
 .hotel__img {
   border-radius: 5px;
-  box-shadow: 0px 5px 10px #686868;
+  box-shadow: 5px 5px 10px 0px #ccc;
 }
 @media (min-width: 37.5em) {
   .hotel__img--1 {
-    grid-area: img1;
+    grid-column: 2/span 2;
+    grid-row: 1/2;
     width: 95%;
     margin: 0 auto;
   }
 }
 @media (min-width: 37.5em) {
   .hotel__img--2 {
-    grid-area: img2;
+    grid-column: 4/span 2;
+    grid-row: 1/2;
     width: 95%;
     margin: 0 auto;
   }
 }
 @media (min-width: 37.5em) {
   .hotel__img--3 {
-    grid-area: img3;
+    grid-column: 6/span 2;
+    grid-row: 1/2;
     width: 95%;
     margin: 0 auto;
   }
@@ -310,7 +316,8 @@ footer {
 @media (min-width: 37.5em) {
   .about__heading {
     flex-direction: row;
-    grid-area: abhead;
+    grid-column: 2/span 6;
+    grid-row: 2/3;
   }
 }
 .about__heading h1 {
@@ -356,7 +363,9 @@ footer {
 }
 @media (min-width: 37.5em) {
   .about__text:nth-of-type(1) {
-    grid-area: abtext1;
+    grid-column: 2/span 3;
+    grid-row: 3/4;
+    margin-right: 2rem;
   }
 }
 
@@ -367,7 +376,9 @@ footer {
 }
 @media (min-width: 37.5em) {
   .about__text:nth-of-type(2) {
-    grid-area: abtext2;
+    grid-column: 2/span 3;
+    grid-row: 4/5;
+    margin-right: 2rem;
   }
 }
 
@@ -376,7 +387,9 @@ h3 {
 }
 @media (min-width: 37.5em) {
   h3 {
-    grid-area: h3amen;
+    grid-column: 2/span 6;
+    grid-row: 5/6;
+    margin-top: 0;
   }
 }
 
@@ -388,37 +401,43 @@ h3 {
 
 @media (min-width: 37.5em) {
   .amenities__header--features {
-    grid-area: h4feat;
+    grid-column: 2/span 3;
+    grid-row: 6/7;
   }
 }
 
 @media (min-width: 37.5em) {
   .amenities__list--features {
-    grid-area: ulfeat;
+    grid-column: 2/span 3;
+    grid-row: 7/8;
   }
 }
 
 @media (min-width: 37.5em) {
   .amenities__header--room {
-    grid-area: h4room;
+    grid-column: 2/span 3;
+    grid-row: 8/9;
   }
 }
 
 @media (min-width: 37.5em) {
   .amenities__list--room {
-    grid-area: ulroom;
+    grid-column: 2/span 3;
+    grid-row: 9/10;
   }
 }
 
 @media (min-width: 37.5em) {
   .amenities__header--dining {
-    grid-area: h4dine;
+    grid-column: 2/span 3;
+    grid-row: 10/11;
   }
 }
 
 @media (min-width: 37.5em) {
   .amenities__list--dining {
-    grid-area: uldine;
+    grid-column: 2/span 3;
+    grid-row: 11/12;
   }
 }
 
@@ -432,12 +451,16 @@ h3 {
 }
 @media (min-width: 37.5em) {
   .review--one {
-    grid-area: rev1;
+    grid-column: 5/span 3;
+    grid-row: 3/5;
+    place-self: center;
   }
 }
 @media (min-width: 37.5em) {
   .review--two {
-    grid-area: rev2;
+    grid-column: 5/span 3;
+    grid-row: 5/11;
+    place-self: center;
   }
 }
 .review blockquote {
