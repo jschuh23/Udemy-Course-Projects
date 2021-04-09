@@ -3,6 +3,15 @@
     &:visited {
         padding: 0.5em 1.5em;
         border-radius: 5px;
+        transition: transform 500ms;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+
+        &:active {
+            transform: translateY(3px);
+        }
     }
 
     &--primary {
