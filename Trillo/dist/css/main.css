@@ -1,55 +1,14 @@
 @charset "UTF-8";
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-@font-face {
-  font-family: "aileron";
-  src: url("/assets/Aileron-Regular-webfont.woff") format("woff");
-  src: url("/assets/Aileron-Regular-webfont.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "aileron";
-  src: url("/assets/Aileron-Bold-webfont.woff") format("woff");
-  src: url("/assets/Aileron-Bold-webfont.ttf") format("ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "aileron";
-  src: url("/assets/Aileron-Light-webfont.woff") format("woff");
-  src: url("/assets/Aileron-Light-webfont.ttf") format("ttf");
-  font-weight: lighter;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 body {
-  font-family: "aileron", Georgia, serif;
-  font-weight: normal;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
   line-height: 1.6;
   background-color: #fff;
 }
 
 .btn:link, .btn:visited {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .nav__list--item a {
@@ -87,7 +46,7 @@ h2 {
 }
 
 h4 {
-  font-weight: normal;
+  font-weight: 400;
   text-decoration: underline;
   text-underline-offset: 0.25rem;
 }
@@ -100,6 +59,27 @@ blockquote,
 footer p {
   color: #fff;
   font-size: 0.7rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .container {
