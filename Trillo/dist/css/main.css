@@ -527,11 +527,21 @@ h3 {
     place-self: center;
   }
 }
+@media (min-width: 50em) {
+  .review--one {
+    width: 65%;
+  }
+}
 @media (min-width: 37.5em) {
   .review--two {
     grid-column: 4/span 3;
     grid-row: 5/11;
     place-self: center;
+  }
+}
+@media (min-width: 50em) {
+  .review--two {
+    width: 65%;
   }
 }
 .review blockquote {

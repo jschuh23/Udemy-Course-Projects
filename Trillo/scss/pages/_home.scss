@@ -188,6 +188,9 @@ h3 {
 
             place-self: center;
         }
+        @include respond(large) {
+            width: 65%;
+        }
     }
 
     &--two {
@@ -196,6 +199,9 @@ h3 {
             grid-row: 5 / 11;
 
             place-self: center;
+        }
+        @include respond(large) {
+            width: 65%;
         }
     }
 
