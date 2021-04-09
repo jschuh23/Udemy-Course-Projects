@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 body {
-  font-family: "Open Sans", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   background-color: #fff;
@@ -9,6 +9,11 @@ body {
 
 .btn:link, .btn:visited {
   font-weight: 300;
+}
+
+.search__input {
+  font: inherit;
+  color: #ea4572;
 }
 
 .nav__list--item a {
@@ -139,9 +144,13 @@ img {
 .header__flex--wrapper .search__input {
   width: 100%;
   height: 2rem;
+  padding: 1.25rem;
   border: none;
   border-radius: 1rem;
   background-color: #e5e5e5;
+}
+.header__flex--wrapper .search__input:focus {
+  outline: none;
 }
 .header__flex--wrapper .search__img {
   position: absolute;
