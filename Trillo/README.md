@@ -57,5 +57,3 @@ Please view my final project at https://jschuh23.github.io/Udemy-Course-Projects
 2. Learned how to adjust the SVG color when inserted into HTML as an `<img>` by changing the `<path fill="">` attribute within the SVG code
 
 3. Discovered that the SVG star images were not appearing on an iPhone so I did some research and learned that instead of writing percentages for the star widths and heights I needed to adjust these to pixels
-
-4. Used the `@font-face` CSS at-rule to specify a custom font-family
