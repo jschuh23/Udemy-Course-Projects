@@ -23,18 +23,21 @@ img {
 @font-face {
   font-family: "aileron";
   src: url("/assets/Aileron-Regular-webfont.woff") format("woff");
+  src: url("/assets/Aileron-Regular-webfont.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "aileron";
   src: url("/assets/Aileron-Bold-webfont.woff") format("woff");
+  src: url("/assets/Aileron-Bold-webfont.ttf") format("ttf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "aileron";
   src: url("/assets/Aileron-Light-webfont.woff") format("woff");
+  src: url("/assets/Aileron-Light-webfont.ttf") format("ttf");
   font-weight: lighter;
   font-style: normal;
 }
