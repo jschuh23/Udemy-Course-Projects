@@ -159,6 +159,18 @@ img {
   width: 1.25rem;
   height: 1.25rem;
 }
+.header__flex--wrapper .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
 
 footer {
   height: 5rem;
@@ -255,7 +267,7 @@ footer {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
 }
 .nav__list--item {
-  padding: 1.25rem 1rem;
+  margin: 1.25rem 0;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -17,14 +17,20 @@
                     <div class="nav__hamburger">
                         <div class="nav__hamburger--line"></div>
                     </div>
-                    <div class="search" role="search">
-                        <input class="search__input" type="text" />
+                    <form action="#" class="search" role="search">
+                        <label for="search" class="sr-only">Search</label>
+                        <input
+                            id="search"
+                            name="search"
+                            class="search__input"
+                            type="search"
+                        />
                         <img
                             class="search__img"
                             src="./img/SVG/magnifying-glass.svg"
                             alt="Search"
                         />
-                    </div>
+                    </form>
                     <div class="btn__signin">
                         <a href="#" class="btn btn--secondary">Sign In</a>
                     </div>
