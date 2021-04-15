@@ -3,6 +3,7 @@
 # Trillo Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
 
 This project followed the design presented in the Udemy course, but I adjusted some portions to fit more inline with the current techniques I've learned.
+[Advanced CSS and SASS: Flexbox, Grid, Animations and more](https://www.udemy.com/course/advanced-css-and-sass/)
 
 Please view my final project at https://jschuh23.github.io/Udemy-Course-Projects/Trillo/dist/index.html
 
