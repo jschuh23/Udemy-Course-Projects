@@ -48,9 +48,11 @@ Please view my final project at https://jschuh23.github.io/Udemy-Course-Projects
     - pages
         - \_home.scss
 
-2. Utilized the BEM (Block Element Modifier) methodology for my naming convention in HTML and CSS  
+2. Utilized the BEM (Block Element Modifier) methodology for my naming convention in HTML and CSS
 
 3. Used axe DevTools to check accessibility within the page and made color adjustments accordingly to fix WCAG 2 AA contrast ratio thresholds
+
+4. Tested on Chrome, Firefox, Android phone and iPhone
 
 ## LESSONS LEARNED
 
