@@ -1,3 +1,5 @@
+![Trillo](./design/Trillo-screenshot.png)
+
 # Trillo Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
 
 This project followed the design presented in the Udemy course, but I adjusted some portions to fit more inline with the current techniques I've learned.
@@ -29,7 +31,9 @@ Please view my final project at https://jschuh23.github.io/Udemy-Course-Projects
 
 ## CONTINUED DEVELOPMENT
 
-1. Utilized Sass and created a 7-1 folder structure containing the following folders and files:
+1. Created design in Figma for both desktop and mobile layouts  
+
+2. Utilized Sass and created a 7-1 folder structure containing the following folders and files:
 
     - abstracts
         - \_mixins.scss
@@ -48,11 +52,11 @@ Please view my final project at https://jschuh23.github.io/Udemy-Course-Projects
     - pages
         - \_home.scss
 
-2. Utilized the BEM (Block Element Modifier) methodology for my naming convention in HTML and CSS
+3. Utilized the BEM (Block Element Modifier) methodology for my naming convention in HTML and CSS
 
-3. Used axe DevTools to check accessibility within the page and made color adjustments accordingly to fix WCAG 2 AA contrast ratio thresholds
+4. Used axe DevTools to check accessibility within the page and made color adjustments accordingly to fix WCAG 2 AA contrast ratio thresholds
 
-4. Tested on Chrome, Firefox, Android phone and iPhone
+5. Tested on Chrome, Firefox, Android phone and iPhone
 
 ## LESSONS LEARNED
 
