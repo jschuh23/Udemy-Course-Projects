@@ -239,7 +239,6 @@ footer {
   background-color: #ea4572;
   transition: all 1s ease-out;
   clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-  pointer-events: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,10 +266,15 @@ footer {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
 }
 .nav__list--item {
-  margin: 1.25rem 0;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.nav__list--item:hover {
+  background-color: #cf1748;
+  cursor: pointer;
+  transition: background-color 1s;
 }
 .nav__list--item img {
   display: inline-block;

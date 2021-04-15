@@ -66,7 +66,6 @@
         background-color: $primary-color;
         transition: all 1s ease-out;
         clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-        pointer-events: none;
 
         @include flex-center;
         @include respond(small) {
@@ -92,9 +91,15 @@
         }
 
         &--item {
-            margin: 1.25rem 0;
+            padding: 1rem 2rem;
 
             @include flex-center;
+
+            &:hover {
+                background-color: $dark-primary-color;
+                cursor: pointer;
+                transition: background-color 1s;
+            }
         }
 
         &--item img {
