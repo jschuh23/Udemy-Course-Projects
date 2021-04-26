@@ -1,6 +1,6 @@
 # Udemy Course Projects
 This repository contains many of the course projects that I've completed on the online platform, [Udemy](https://www.udemy.com/).    
-Each project folder contains a README file detailing:
+Each project folder contains a `README.md` file detailing:
 * What I adjusted from the original project  
 * The focus areas that I continued to develop with  
 * Lessons I learned from the project  
