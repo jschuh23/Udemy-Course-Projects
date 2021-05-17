@@ -1,0 +1,4 @@
+// The @forward rule gathers all of the listed files and then distributes them to the files that have '@use abstracts' listed
+
+@forward '../abstracts/variables';
+@forward '../abstracts/mixins';
