@@ -55,4 +55,22 @@ select {
   overflow: hidden;
 }
 
+.nav__main {
+  padding: 1rem;
+  background-color: #cc9e66;
+}
+.nav__hamburger {
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto;
+}
+.nav__hamburger--line {
+  width: 2rem;
+  height: 0.15rem;
+  background-color: #fff;
+}
+.nav__hamburger--line:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
 /*# sourceMappingURL=main.css.map */

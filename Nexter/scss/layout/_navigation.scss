@@ -1,1 +1,23 @@
 @use '../abstracts' as *;
+
+.nav {
+    &__main {
+        padding: 1rem;
+        background-color: $color-primary;
+    }
+    &__hamburger {
+        width: 2rem;
+        height: 2rem;
+        margin-left: auto;
+
+        &--line {
+            width: 2rem;
+            height: 0.15rem;
+            background-color: #fff;
+
+            &:nth-child(2) {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+}
