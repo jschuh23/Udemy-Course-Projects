@@ -2,12 +2,10 @@
 
 .nav {
     &__main {
-        padding: 1rem;
         background-color: $color-primary;
     }
     &__hamburger {
         width: 2rem;
-        height: 2rem;
         margin-left: auto;
 
         &--line {
