@@ -1,1 +1,8 @@
 @use '../abstracts' as *;
+
+.btn--primary {
+    background-color: $color-primary;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+}

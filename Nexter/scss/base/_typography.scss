@@ -1,8 +1,9 @@
 @use '../abstracts' as *;
 
+// Base
 body {
-    font-family: $font-primary;
     color: $color-gray-dark-2;
+    font-family: $font-primary;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -12,4 +13,37 @@ button,
 textarea,
 select {
     font: inherit;
+}
+
+// Header
+.header__main--content {
+    .cta {
+        font-family: $font-display;
+
+        .subhead--primary {
+            font-size: 0.8rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        h1 {
+            color: #fff;
+            font-weight: 400;
+            line-height: 1;
+        }
+    }
+
+    .network--logos {
+        span {
+            font-size: 0.8rem;
+            color: #fff;
+        }
+    }
+}
+
+// Buttons
+.btn--primary {
+    color: #fff;
+    font-weight: 400;
 }

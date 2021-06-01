@@ -36,8 +36,8 @@ a {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
   color: #786754;
+  font-family: "Nunito", sans-serif;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -49,19 +49,82 @@ select {
   font: inherit;
 }
 
+.header__main--content .cta {
+  font-family: "Josefin Sans", sans-serif;
+}
+.header__main--content .cta .subhead--primary {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header__main--content .cta h1 {
+  color: #fff;
+  font-weight: 400;
+  line-height: 1;
+}
+.header__main--content .network--logos span {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.btn--primary {
+  color: #fff;
+  font-weight: 400;
+}
+
 .container {
   width: min(90%, 71.25rem);
   margin: 0 auto;
   overflow: hidden;
 }
 
+.header__main--content {
+  background: linear-gradient(rgba(19, 37, 57, 0.9), rgba(19, 37, 57, 0.9)), url(../../dist/img/hero.jpeg);
+  background-size: cover;
+  background-position: left;
+}
+.header__main--content .logo {
+  width: 10rem;
+  margin: 0 auto;
+}
+.header__main--content .network--logos {
+  text-align: center;
+  line-height: 0.3;
+}
+.header__main--content .network--logos span {
+  display: inline-block;
+  position: relative;
+}
+.header__main--content .network--logos span:before, .header__main--content .network--logos span:after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid white;
+  top: 0;
+  width: 40rem;
+}
+.header__main--content .network--logos span:before {
+  right: 100%;
+  margin-right: 1rem;
+}
+.header__main--content .network--logos span:after {
+  left: 100%;
+  margin-left: 1rem;
+}
+.header__main--content .network--logos .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__main--content .network--logos img {
+  width: min(20%, 6rem);
+}
+
 .nav__main {
-  padding: 1rem;
-  background-color: #cc9e66;
+  background-color: #27190c;
 }
 .nav__hamburger {
   width: 2rem;
-  height: 2rem;
   margin-left: auto;
 }
 .nav__hamburger--line {
@@ -71,6 +134,30 @@ select {
 }
 .nav__hamburger--line:nth-child(2) {
   margin: 0.5rem 0;
+}
+
+.nav__main {
+  padding: 1rem;
+}
+
+.header__main--content {
+  padding: 2rem 1.25rem;
+}
+.header__main--content .cta {
+  margin: 3rem 0;
+}
+.header__main--content h1 {
+  margin-bottom: 1.5rem;
+}
+.header__main--content .network--logos span {
+  margin-bottom: 1rem;
+}
+
+.btn--primary {
+  background-color: #27190c;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
