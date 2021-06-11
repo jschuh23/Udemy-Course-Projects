@@ -1,1 +1,32 @@
 @use '../abstracts' as *;
+
+// Top realtors section
+
+.realtor {
+    background-color: $color-secondary;
+
+    .subhead--white {
+        text-align: center;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &--img {
+        width: 4rem;
+        border-radius: 50%;
+    }
+
+    &--name {
+        display: block;
+        line-height: 1;
+    }
+
+    &--stats {
+        display: block;
+    }
+}

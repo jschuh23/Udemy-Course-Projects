@@ -7,10 +7,11 @@
 
 // Header
 .header__main--content {
-    padding: 2rem 1.25rem;
+    padding-block: 2rem;
+    padding-inline: 1.25rem;
 
     .cta {
-        margin: 3rem 0;
+        margin-block: 3rem;
     }
 
     h1 {
@@ -22,4 +23,9 @@
             margin-bottom: 1rem;
         }
     }
+}
+
+// Top realtors section
+.realtor {
+    padding-block: 2rem;
 }

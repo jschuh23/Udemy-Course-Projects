@@ -36,7 +36,7 @@ a {
 }
 
 body {
-  color: #786754;
+  color: #5a4d3f;
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   line-height: 1.6;
@@ -49,14 +49,26 @@ select {
   font: inherit;
 }
 
-.header__main--content .cta {
+.subhead, .subhead--primary, .subhead--white {
   font-family: "Josefin Sans", sans-serif;
-}
-.header__main--content .cta .subhead--primary {
   font-size: 0.8rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+.subhead--white {
   color: #fff;
+}
+.subhead--primary {
+  color: #27190c;
+}
+
+.btn--primary {
+  color: #fff;
+  font-weight: 400;
+}
+
+.header__main--content .cta {
+  font-family: "Josefin Sans", sans-serif;
 }
 .header__main--content .cta h1 {
   color: #fff;
@@ -68,9 +80,15 @@ select {
   color: #fff;
 }
 
-.btn--primary {
+.realtor__info {
   color: #fff;
+}
+.realtor--name {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+}
+.realtor--stats {
+  font-size: 0.6rem;
 }
 
 .container {
@@ -141,10 +159,11 @@ select {
 }
 
 .header__main--content {
-  padding: 2rem 1.25rem;
+  padding-block: 2rem;
+  padding-inline: 1.25rem;
 }
 .header__main--content .cta {
-  margin: 3rem 0;
+  margin-block: 3rem;
 }
 .header__main--content h1 {
   margin-bottom: 1.5rem;
@@ -153,11 +172,39 @@ select {
   margin-bottom: 1rem;
 }
 
+.realtor {
+  padding-block: 2rem;
+}
+
 .btn--primary {
   background-color: #27190c;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 5px;
+}
+
+.realtor {
+  background-color: #132539;
+}
+.realtor .subhead--white {
+  text-align: center;
+}
+.realtor__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.realtor--img {
+  width: 4rem;
+  border-radius: 50%;
+}
+.realtor--name {
+  display: block;
+  line-height: 1;
+}
+.realtor--stats {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

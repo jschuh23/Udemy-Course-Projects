@@ -2,7 +2,7 @@
 
 // Base
 body {
-    color: $color-gray-dark-2;
+    color: $color-gray-dark-1;
     font-family: $font-primary;
     font-weight: 300;
     line-height: 1.6;
@@ -15,17 +15,34 @@ select {
     font: inherit;
 }
 
+// Subheadings
+.subhead {
+    font-family: $font-display;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &--white {
+        @extend .subhead;
+        color: #fff;
+    }
+
+    &--primary {
+        @extend .subhead;
+        color: $color-primary;
+    }
+}
+
+// Buttons
+.btn--primary {
+    color: #fff;
+    font-weight: 400;
+}
+
 // Header
 .header__main--content {
     .cta {
         font-family: $font-display;
-
-        .subhead--primary {
-            font-size: 0.8rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: #fff;
-        }
 
         h1 {
             color: #fff;
@@ -42,8 +59,18 @@ select {
     }
 }
 
-// Buttons
-.btn--primary {
-    color: #fff;
-    font-weight: 400;
+// Top realtors section
+.realtor {
+    &__info {
+        color: #fff;
+    }
+
+    &--name {
+        font-family: $font-display;
+        font-weight: 400;
+    }
+
+    &--stats {
+        font-size: 0.6rem;
+    }
 }
