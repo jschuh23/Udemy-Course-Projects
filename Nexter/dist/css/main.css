@@ -155,7 +155,7 @@ select {
 }
 
 .nav__main {
-  padding: 1rem;
+  padding-block: 1rem;
 }
 
 .header__main--content {
