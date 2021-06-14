@@ -1,24 +1,16 @@
 @use '../abstracts' as *;
 
-// Navigation
-.nav__main {
-    padding-block: 1rem;
-}
-
 // Header
 .header__main--content {
-    padding-block: 2rem;
-    padding-inline: 1.25rem;
-
     .cta {
-        margin-block: 3rem;
+        margin-block: 4.5rem;
     }
 
     h1 {
         margin-bottom: 1.5rem;
     }
 
-    .network--logos {
+    .network__logos {
         span {
             margin-bottom: 1rem;
         }

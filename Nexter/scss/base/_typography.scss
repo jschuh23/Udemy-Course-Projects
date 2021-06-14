@@ -51,10 +51,10 @@ select {
         }
     }
 
-    .network--logos {
+    .network__logos {
         span {
             font-size: 0.8rem;
-            color: #fff;
+            color: $color-gray-light-2;
         }
     }
 }

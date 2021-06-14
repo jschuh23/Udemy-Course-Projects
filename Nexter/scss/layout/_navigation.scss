@@ -2,8 +2,12 @@
 
 .nav {
     &__main {
+        display: flex;
+        align-items: center;
+        height: 10vh;
         background-color: $color-primary;
     }
+
     &__hamburger {
         width: 2rem;
         margin-left: auto;
