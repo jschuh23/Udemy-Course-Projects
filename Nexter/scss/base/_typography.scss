@@ -61,10 +61,9 @@ select {
 
 // Top realtors section
 .realtor {
-    &__info {
+    &--grid {
         color: #fff;
     }
-
     &--name {
         font-family: $font-display;
         font-weight: 400;
