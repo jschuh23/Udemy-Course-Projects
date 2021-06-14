@@ -10,3 +10,31 @@
         row-gap: 2rem;
     }
 }
+
+.features {
+    &--grid {
+        display: grid;
+        row-gap: 3rem;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-areas:
+            'icon header'
+            '. paragraph';
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    &__icon {
+        grid-area: icon;
+    }
+
+    &__header {
+        grid-area: header;
+    }
+
+    &__content {
+        grid-area: paragraph;
+    }
+}

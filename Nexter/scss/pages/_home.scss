@@ -1,7 +1,6 @@
 @use '../abstracts' as *;
 
 // Top realtors section
-
 .realtor {
     background-color: $color-secondary;
 
@@ -21,5 +20,12 @@
 
     &--stats {
         display: block;
+    }
+}
+
+// Features section
+.features {
+    &__icon {
+        width: 2.5rem;
     }
 }

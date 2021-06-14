@@ -172,6 +172,26 @@ select {
   row-gap: 2rem;
 }
 
+.features--grid {
+  display: grid;
+  row-gap: 3rem;
+}
+.features__info {
+  display: grid;
+  grid-template-areas: "icon header" ". paragraph";
+  align-items: center;
+  column-gap: 1rem;
+}
+.features__icon {
+  grid-area: icon;
+}
+.features__header {
+  grid-area: header;
+}
+.features__content {
+  grid-area: paragraph;
+}
+
 .header__main--content .cta {
   margin-block: 4.5rem;
 }
@@ -183,10 +203,14 @@ select {
 }
 
 .realtor {
-  padding-block: 2rem;
+  padding-block: 3rem;
 }
 .realtor .subhead--white {
   margin-block-end: 1rem;
+}
+
+.features {
+  margin-block: 3rem;
 }
 
 .btn--primary {
@@ -212,6 +236,10 @@ select {
 }
 .realtor--stats {
   display: block;
+}
+
+.features__icon {
+  width: 2.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
