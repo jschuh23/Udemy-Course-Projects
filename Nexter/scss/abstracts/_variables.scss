@@ -1,14 +1,12 @@
 // COLOR VARIABLES
-$color-primary: hsl(29, 51%, 10%);
+$color-primary: hsl(30, 51%, 10%);
+$color-primary-light: hsl(30, 51%, 25%);
 
 $color-secondary: hsl(212, 50%, 15%);
 $color-secondary-alpha: hsla(212, 50%, 15%, 0.9);
 
-$color-gray-light-1: hsl(0, 0%, 90%);
-$color-gray-light-2: hsl(0, 0%, 70%);
-
-$color-gray-dark-1: hsl(32, 18%, 30%);
-$color-gray-dark-2: hsl(32, 18%, 40%);
+$color-gray: hsl(0, 0%, 70%);
+$color-gray-light: hsl(0, 0%, 97%);
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;

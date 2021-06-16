@@ -36,7 +36,7 @@ a {
 }
 
 body {
-  color: #5a4d3f;
+  color: #60401f;
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   line-height: 1.6;
@@ -59,7 +59,7 @@ select {
   color: #fff;
 }
 .subhead--primary {
-  color: #27190c;
+  color: #271a0c;
 }
 
 .btn--primary {
@@ -89,6 +89,18 @@ select {
 }
 .realtor--stats {
   font-size: 0.6rem;
+}
+
+.testimonial__quote {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.1;
+}
+.testimonial__text {
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 .container {
@@ -148,7 +160,7 @@ select {
   display: flex;
   align-items: center;
   height: 10vh;
-  background-color: #27190c;
+  background-color: #271a0c;
 }
 .nav__hamburger {
   width: 2rem;
@@ -214,7 +226,7 @@ select {
 }
 
 .btn--primary {
-  background-color: #27190c;
+  background-color: #271a0c;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 5px;
@@ -240,6 +252,10 @@ select {
 
 .features__icon {
   width: 2.5rem;
+}
+
+.testimonial {
+  background-color: #f7f7f7;
 }
 
 /*# sourceMappingURL=main.css.map */
