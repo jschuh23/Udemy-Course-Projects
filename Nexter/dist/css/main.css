@@ -225,6 +225,16 @@ select {
   margin-block: 3rem;
 }
 
+.testimonial__content {
+  padding-block: 3rem;
+}
+.testimonial__quote {
+  margin-block: 1rem;
+}
+.testimonial__text {
+  margin-block-end: 2rem;
+}
+
 .btn--primary {
   background-color: #271a0c;
   padding: 0.5rem 1.5rem;

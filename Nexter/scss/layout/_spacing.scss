@@ -30,3 +30,18 @@
 .features {
     margin-block: 3rem;
 }
+
+// Testimonials section
+.testimonial {
+    &__content {
+        padding-block: 3rem;
+    }
+
+    &__quote {
+        margin-block: 1rem;
+    }
+
+    &__text {
+        margin-block-end: 2rem;
+    }
+}
