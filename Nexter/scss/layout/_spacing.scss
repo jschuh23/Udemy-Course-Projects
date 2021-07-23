@@ -47,3 +47,44 @@
         margin-block-end: 2rem;
     }
 }
+
+// Homes section
+.homes {
+    margin-block-end: 3rem;
+
+    &__card:not(:last-child) {
+        margin-block-end: 2.5rem;
+    }
+
+    .card--heading--span {
+        margin-block-start: -2rem;
+    }
+
+    &__card--heading {
+        padding: 1rem;
+    }
+
+    &__card--info {
+        margin-block: 2rem;
+    }
+
+    .card--info-left {
+        padding-inline-start: 1.5rem;
+    }
+
+    .card--info-right {
+        padding-inline-end: 1.5rem;
+    }
+
+    &__card ul {
+        padding: 0;
+    }
+
+    .card--list--item:first-child {
+        margin-block-end: 2rem;
+    }
+
+    &__icon {
+        margin-inline-end: 1rem;
+    }
+}

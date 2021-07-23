@@ -57,3 +57,33 @@
         }
     }
 }
+
+// Homes section
+.homes {
+    &__card {
+        background-color: $color-gray-light;
+    }
+
+    .card--heading--span {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card--heading {
+        background-color: $color-secondary-light;
+        color: #fff;
+    }
+
+    &__card--info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card--list--item {
+        display: flex;
+    }
+
+    &__icon {
+        width: 1.25rem;
+    }
+}

@@ -103,6 +103,10 @@ select {
   font-style: italic;
 }
 
+.card--list--item > span {
+  font-size: 0.85rem;
+}
+
 .container {
   width: min(90%, 71.25rem);
   margin: 0 auto;
@@ -238,11 +242,47 @@ select {
   margin-block-end: 2rem;
 }
 
+.homes {
+  margin-block-end: 3rem;
+}
+.homes__card:not(:last-child) {
+  margin-block-end: 2.5rem;
+}
+.homes .card--heading--span {
+  margin-block-start: -2rem;
+}
+.homes__card--heading {
+  padding: 1rem;
+}
+.homes__card--info {
+  margin-block: 2rem;
+}
+.homes .card--info-left {
+  padding-inline-start: 1.5rem;
+}
+.homes .card--info-right {
+  padding-inline-end: 1.5rem;
+}
+.homes__card ul {
+  padding: 0;
+}
+.homes .card--list--item:first-child {
+  margin-block-end: 2rem;
+}
+.homes__icon {
+  margin-inline-end: 1rem;
+}
+
 .btn--primary {
   background-color: #271a0c;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 5px;
+}
+
+.btn--homes {
+  width: 100%;
+  border-radius: 0;
 }
 
 .realtor {
@@ -285,6 +325,28 @@ select {
 .testimonial__pics--2 {
   grid-column: 4/6;
   grid-row: 3/5;
+}
+
+.homes__card {
+  background-color: #f7f7f7;
+}
+.homes .card--heading--span {
+  display: flex;
+  justify-content: center;
+}
+.homes__card--heading {
+  background-color: #336399;
+  color: #fff;
+}
+.homes__card--info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.homes .card--list--item {
+  display: flex;
+}
+.homes__icon {
+  width: 1.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */
