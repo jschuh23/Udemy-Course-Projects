@@ -246,7 +246,7 @@ select {
   margin-block-end: 3rem;
 }
 .homes__card:not(:last-child) {
-  margin-block-end: 2.5rem;
+  margin-block-end: 3.5rem;
 }
 .homes .card--heading--span {
   margin-block-start: -2rem;
