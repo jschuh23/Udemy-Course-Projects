@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-
 // Top realtors section
 .realtor {
     background-color: $color-secondary;
@@ -85,5 +84,77 @@
 
     &__icon {
         width: 1.25rem;
+    }
+}
+
+// Gallery section
+.gallery {
+    background-color: $color-gray-light;
+    padding: 0.75rem;
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(8, 1fr);
+    grid-gap: 0.75rem;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__pic--1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+    &__pic--2 {
+        grid-column: 3 / span 3;
+        grid-row: 1 / span 3;
+    }
+    &__pic--3 {
+        grid-column: 6;
+        grid-row: 1 / span 2;
+    }
+    &__pic--4 {
+        grid-column: 7 / span 2;
+        grid-row: 1 / span 2;
+    }
+    &__pic--5 {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 3;
+    }
+    &__pic--6 {
+        grid-column: 3 / span 2;
+        grid-row: 4 / span 2;
+    }
+    &__pic--7 {
+        grid-column: 5;
+        grid-row: 4;
+    }
+    &__pic--8 {
+        grid-column: 6 / span 2;
+        grid-row: 3 / span 2;
+    }
+    &__pic--9 {
+        grid-column: 8;
+        grid-row: 3 / span 3;
+    }
+    &__pic--10 {
+        grid-column: 1;
+        grid-row: 6 / span 2;
+    }
+    &__pic--11 {
+        grid-column: 2 / span 2;
+        grid-row: 6 / span 2;
+    }
+    &__pic--12 {
+        grid-column: 4;
+        grid-row: 6 / span 2;
+    }
+    &__pic--13 {
+        grid-column: 5 / span 3;
+        grid-row: 5 / span 3;
+    }
+    &__pic--14 {
+        grid-column: 8;
+        grid-row: 6 / span 2;
     }
 }
