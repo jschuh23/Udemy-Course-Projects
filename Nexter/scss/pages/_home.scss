@@ -90,7 +90,6 @@
 // Gallery section
 .gallery {
     background-color: $color-gray-light;
-    padding: 0.75rem;
     display: grid;
     grid-template: repeat(7, 1fr) / repeat(8, 1fr);
     grid-gap: 0.75rem;
