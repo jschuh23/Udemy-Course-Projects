@@ -1,1 +1,13 @@
 @use '../abstracts' as *;
+
+.footer__main {
+    background-color: $color-secondary;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

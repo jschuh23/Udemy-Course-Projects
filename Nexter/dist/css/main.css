@@ -107,6 +107,16 @@ select {
   font-size: 0.85rem;
 }
 
+.footer__main p {
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.footer__list a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
 .container {
   width: min(90%, 71.25rem);
   margin: 0 auto;
@@ -158,6 +168,18 @@ select {
 .header__main--content .network__logos--container img {
   width: min(20%, 6rem);
   filter: brightness(70%);
+}
+
+.footer__main {
+  background-color: #132539;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .nav__main {
@@ -273,6 +295,22 @@ select {
   margin-inline-end: 1rem;
 }
 
+.gallery {
+  padding: 0.75rem;
+}
+
+.footer__main {
+  padding-block: 3rem;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+}
+.footer__list li > a {
+  padding-block: 1rem;
+}
+
 .btn--primary {
   background-color: #271a0c;
   padding: 0.5rem 1.5rem;
@@ -351,7 +389,6 @@ select {
 
 .gallery {
   background-color: #f7f7f7;
-  padding: 0.75rem;
   display: grid;
   grid-template: repeat(7, 1fr)/repeat(8, 1fr);
   grid-gap: 0.75rem;
