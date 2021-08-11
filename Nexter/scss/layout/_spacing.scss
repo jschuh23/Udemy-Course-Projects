@@ -50,9 +50,7 @@
 
 // Homes section
 .homes {
-    margin-block-end: 3rem;
-
-    &__card:not(:last-child) {
+    &__card {
         margin-block-end: 3.5rem;
     }
 

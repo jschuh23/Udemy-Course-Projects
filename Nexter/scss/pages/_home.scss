@@ -59,8 +59,15 @@
 
 // Homes section
 .homes {
+    .flex-wrapper {
+        @include flex-center;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+
     &__card {
         background-color: $color-gray-light;
+        width: min(90%, 21rem);
     }
 
     .card--heading--span {

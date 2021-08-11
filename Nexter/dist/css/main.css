@@ -176,11 +176,11 @@ select {
 }
 
 .footer__list {
-  display: flex;
   flex-direction: column;
+  gap: 1rem;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
 .nav__main {
@@ -265,10 +265,7 @@ select {
   margin-block-end: 2rem;
 }
 
-.homes {
-  margin-block-end: 3rem;
-}
-.homes__card:not(:last-child) {
+.homes__card {
   margin-block-end: 3.5rem;
 }
 .homes .card--heading--span {
@@ -369,8 +366,16 @@ select {
   grid-row: 3/5;
 }
 
+.homes .flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
 .homes__card {
   background-color: #f7f7f7;
+  width: min(90%, 21rem);
 }
 .homes .card--heading--span {
   display: flex;
