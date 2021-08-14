@@ -3,9 +3,3 @@
 .footer__main {
     background-color: $color-secondary;
 }
-
-.footer__list {
-    flex-direction: column;
-    gap: 1rem;
-    @include flex-center;
-}
