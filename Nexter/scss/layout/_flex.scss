@@ -6,6 +6,13 @@
     column-gap: 2rem;
 }
 
+// Features section
+.features {
+    .flex-wrapper {
+        align-items: baseline;
+    }
+}
+
 // Homes section
 .homes {
     .card--heading--span {
