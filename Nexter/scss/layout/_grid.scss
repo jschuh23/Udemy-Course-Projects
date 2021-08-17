@@ -1,5 +1,13 @@
 @use '../abstracts' as *;
 
+// Header
+@include respond(large) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
 // Top realtors section
 .realtor {
     &--grid {

@@ -194,6 +194,12 @@ select {
   margin: 0.5rem 0;
 }
 
+@media (min-width: 60em) {
+  .header-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
 .realtor--grid {
   display: grid;
   grid-template-columns: min-content max-content;
