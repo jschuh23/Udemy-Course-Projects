@@ -180,6 +180,9 @@ select {
 .footer__main {
   background-color: #132539;
 }
+.footer__main p {
+  text-align: center;
+}
 
 .nav__main {
   display: flex;
@@ -334,13 +337,27 @@ select {
 }
 
 .footer__list {
-  flex-direction: column;
-  gap: 1rem;
+  flex-flow: row wrap;
+  gap: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.footer__list li {
+  flex-basis: 100%;
+  text-align: center;
+}
 
+@media (min-width: 37.5em) {
+  .footer__list li {
+    flex-basis: 40%;
+  }
+}
+@media (min-width: 60em) {
+  .footer__list li {
+    flex-basis: 25%;
+  }
+}
 .header__main--content .cta {
   margin-block: 4.5rem;
 }
