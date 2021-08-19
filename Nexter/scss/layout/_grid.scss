@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 // Header
-@include respond(large) {
+@include respond(medium) {
     .header-grid {
         display: grid;
         grid-template-columns: 3fr 1fr;
