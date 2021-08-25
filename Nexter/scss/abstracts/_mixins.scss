@@ -13,6 +13,11 @@
     @if $breakpoint == medium {
         @media (min-width: 60em) {
             @content;
+        } //783px
+    }
+    @if $breakpoint == large {
+        @media (min-width: 60em) {
+            @content;
         } //960px
     }
 }

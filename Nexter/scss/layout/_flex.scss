@@ -13,6 +13,9 @@
     }
 }
 
+// Testimonials section
+
+
 // Homes section
 .homes {
     .card--heading--span {
@@ -45,7 +48,7 @@
     }
 }
 
-@include respond(medium) {
+@include respond(large) {
     .footer__list {
         li {
             flex-basis: 25%;
