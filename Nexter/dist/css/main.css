@@ -248,6 +248,15 @@ select {
   grid-column: 4/6;
   grid-row: 3/5;
 }
+@media (min-width: 48.9em) {
+  .testimonial__pics--1 {
+    grid-column: 2/6;
+  }
+  .testimonial__pics--2 {
+    grid-column: 4/7;
+    grid-row: 4/6;
+  }
+}
 
 .homes__card--info {
   display: grid;
@@ -328,6 +337,11 @@ select {
   align-items: baseline;
 }
 
+@media (min-width: 48.9em) {
+  .testimonial {
+    display: flex;
+  }
+}
 .homes .card--heading--span {
   display: flex;
   justify-content: center;
@@ -387,6 +401,7 @@ select {
 }
 .testimonial__content {
   padding-block: 3rem;
+  margin: 0 auto;
 }
 .testimonial__quote {
   margin-block: 1rem;
@@ -481,6 +496,17 @@ select {
 
 .testimonial {
   background-color: #f7f7f7;
+}
+.testimonial__content {
+  width: min(90%, 30rem);
+}
+@media (min-width: 48.9em) {
+  .testimonial__content--width, .testimonial__pics {
+    width: 50%;
+  }
+  .testimonial__content--width {
+    order: 1;
+  }
 }
 .testimonial__pics {
   background: linear-gradient(rgba(96, 64, 31, 0.5), rgba(96, 64, 31, 0.5)), url(/dist/img/back.jpg);

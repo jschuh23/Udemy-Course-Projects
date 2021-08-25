@@ -37,6 +37,21 @@
 .testimonial {
     background-color: $color-gray-light;
 
+    &__content {
+        width: min(90%, 30rem);
+    }
+
+    @include respond(medium) {
+        &__content--width,
+        &__pics {
+            width: 50%;
+        }
+
+        &__content--width {
+            order: 1;
+        }
+    }
+
     &__pics {
         background: linear-gradient(
                 $color-primary-light-alpha,

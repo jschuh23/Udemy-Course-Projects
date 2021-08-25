@@ -14,7 +14,11 @@
 }
 
 // Testimonials section
-
+@include respond(medium) {
+    .testimonial {
+        display: flex;
+    }
+}
 
 // Homes section
 .homes {
