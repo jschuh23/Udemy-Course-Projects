@@ -42,6 +42,12 @@
     &__content {
         padding-block: 3rem;
         margin: 0 auto;
+
+        @include respond(medium) {
+            & {
+                padding-inline: 3rem;
+            }
+        }
     }
 
     &__quote {

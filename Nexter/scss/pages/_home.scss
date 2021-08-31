@@ -38,7 +38,7 @@
     background-color: $color-gray-light;
 
     &__content {
-        width: min(90%, 30rem);
+        width: min(90%, 40rem);
     }
 
     @include respond(medium) {
@@ -59,6 +59,12 @@
             ),
             url(/dist/img/back.jpg);
         background-size: cover;
+
+        @include respond(medium) {
+            &--2 {
+                max-width: 115%;
+            }
+        }
     }
 }
 
