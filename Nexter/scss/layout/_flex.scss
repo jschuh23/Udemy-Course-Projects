@@ -17,6 +17,11 @@
 @include respond(medium) {
     .testimonial {
         display: flex;
+
+        &__content--width {
+            display: flex;
+            align-items: center;
+        }
     }
 }
 

@@ -61,6 +61,11 @@ select {
 .subhead--primary {
   color: #271a0c;
 }
+@media (min-width: 37.5em) {
+  .subhead--primary {
+    font-size: 1rem;
+  }
+}
 
 .btn--primary {
   color: #fff;
@@ -101,6 +106,11 @@ select {
 .testimonial__text {
   font-size: 0.8rem;
   font-style: italic;
+}
+@media (min-width: 37.5em) {
+  .testimonial__text {
+    font-size: 1rem;
+  }
 }
 
 .card--list--item > span {
@@ -341,6 +351,10 @@ select {
   .testimonial {
     display: flex;
   }
+  .testimonial__content--width {
+    display: flex;
+    align-items: center;
+  }
 }
 .homes .card--heading--span {
   display: flex;
@@ -402,6 +416,11 @@ select {
 .testimonial__content {
   padding-block: 3rem;
   margin: 0 auto;
+}
+@media (min-width: 48.9em) {
+  .testimonial__content {
+    padding-inline: 3rem;
+  }
 }
 .testimonial__quote {
   margin-block: 1rem;
@@ -498,7 +517,7 @@ select {
   background-color: #f7f7f7;
 }
 .testimonial__content {
-  width: min(90%, 30rem);
+  width: min(90%, 40rem);
 }
 @media (min-width: 48.9em) {
   .testimonial__content--width, .testimonial__pics {
@@ -511,6 +530,11 @@ select {
 .testimonial__pics {
   background: linear-gradient(rgba(96, 64, 31, 0.5), rgba(96, 64, 31, 0.5)), url(/dist/img/back.jpg);
   background-size: cover;
+}
+@media (min-width: 48.9em) {
+  .testimonial__pics--2 {
+    max-width: 115%;
+  }
 }
 
 .homes__card {

@@ -30,6 +30,12 @@ select {
     &--primary {
         @extend .subhead;
         color: $color-primary;
+
+        @include respond(small) {
+            & {
+                font-size: 1rem;
+            }
+        }
     }
 }
 
@@ -87,6 +93,12 @@ select {
     &__text {
         font-size: 0.8rem;
         font-style: italic;
+
+        @include respond(small) {
+            & {
+                font-size: 1rem;
+            }
+        }
     }
 }
 
