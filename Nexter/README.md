@@ -51,13 +51,13 @@ This project followed the design presented in the Udemy course, but I adjusted s
 
 4. Utilized npm scripts to compile sass (dart sass as node sass has been deprecated) instead of the VS Code extension Live SASS Compiler
 
-5. Tested on Chrome, Firefox, Android phone and iPhone
+5. Tested on Chrome, Firefox, Safari, Android phone and iPhone
 
 ## LESSONS LEARNED
 
-1. Used logical properties - `margin-inline`, `margin-block`, `padding-inline`, `padding-block`
+1. Learned how to use logical properties (`margin-inline`, `margin-block`, `padding-inline`, `padding-block`) which, per MDN, "provide the ability to control layout through logical, rather than physical, direction and dimension mappings." [CSS-Tricks](https://css-tricks.com/css-logical-properties-and-values/)
 
-2. Used hsl color values
+2. Learned how to use hsl color values and how amazingly easy it is to quickly create color schemes. [Smashing Magazine](https://www.smashingmagazine.com/2021/07/hsl-colors-css/)
 
-3. Used the `@use` and `@forward` SASS rules instead of `@import`
+3. Learned how to use the `@use` and `@forward` SASS rules instead of `@import`. The `@import` rule is being deprecated so this is an important feature to learn about and start implimenting in SASS files sooner than later. [Kevin Powell - YouTube](https://www.youtube.com/watch?v=CR-a8upNjJ0&list=LL&index=16)
 
