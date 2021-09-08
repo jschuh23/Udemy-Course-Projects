@@ -339,6 +339,7 @@ select {
 
 .features .flex-wrapper {
   align-items: baseline;
+  row-gap: 3.5rem;
 }
 
 @media (min-width: 48.9em) {
@@ -409,9 +410,6 @@ select {
 
 .features {
   margin-block: 3rem;
-}
-.features__info:not(:last-child) {
-  margin-block-end: 3.5rem;
 }
 
 .testimonial {
