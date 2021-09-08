@@ -1,4 +1,4 @@
-![Nexter](./design/Nexter-project.jpg)
+![Nexter](./design/Nexter-project.JPG)
 
 # Nexter Project - Udemy Advanced CSS and SASS course by Jonas Schmedtmann
 
