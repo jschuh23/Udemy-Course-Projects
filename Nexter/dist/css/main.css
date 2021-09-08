@@ -394,7 +394,7 @@ select {
   margin-block: 4.5rem;
 }
 .header__main--content h1 {
-  margin-block-end: 1.5rem;
+  margin-block: 1rem 2rem;
 }
 .header__main--content .network__logos span {
   margin-block-end: 1rem;
