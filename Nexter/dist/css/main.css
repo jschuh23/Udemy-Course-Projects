@@ -137,7 +137,7 @@ select {
 @media (min-width: 60em) {
   .nav__main .container {
     width: 100%;
-    margin-right: 5rem;
+    margin-inline-end: 5rem;
   }
 }
 .header__main--content {
@@ -152,7 +152,6 @@ select {
 }
 .header__main--content .logo {
   width: min(45%, 13rem);
-  margin: 0 auto;
 }
 .header__main--content .network__logos {
   line-height: 0.3;
@@ -202,15 +201,11 @@ select {
 }
 .nav__hamburger {
   width: 2rem;
-  margin-left: auto;
 }
 .nav__hamburger--line {
   width: 2rem;
   height: 0.15rem;
   background-color: #fff;
-}
-.nav__hamburger--line:nth-child(2) {
-  margin: 0.5rem 0;
 }
 
 @media (min-width: 60em) {
@@ -246,8 +241,7 @@ select {
 
 .testimonial__pics {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template: repeat(6, 1fr)/repeat(6, 1fr);
   align-items: center;
 }
 .testimonial__pics--1 {
@@ -386,6 +380,16 @@ select {
     flex-basis: 25%;
   }
 }
+.nav__hamburger {
+  margin-left: auto;
+}
+.nav__hamburger--line:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
+.header__main--content .logo {
+  margin: 0 auto;
+}
 .header__main--content .cta {
   margin-block: 4.5rem;
 }
@@ -462,14 +466,14 @@ select {
 }
 
 .footer__main {
-  padding-block: 3rem;
+  padding: 2rem 0 3rem;
 }
 .footer__main p {
   margin-block-start: 3rem;
 }
 
 .footer__list {
-  margin: 0;
+  margin: 1rem 0 0;
   padding: 0;
 }
 .footer__list li > a {

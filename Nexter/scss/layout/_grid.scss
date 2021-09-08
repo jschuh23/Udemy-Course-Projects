@@ -48,8 +48,7 @@
 .testimonial {
     &__pics {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template: repeat(6, 1fr) / repeat(6, 1fr);
         align-items: center;
 
         &--1 {

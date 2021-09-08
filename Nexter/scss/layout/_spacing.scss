@@ -1,7 +1,20 @@
 @use '../abstracts' as *;
 
+// Navigation
+.nav__hamburger {
+    margin-left: auto;
+
+    &--line:nth-child(2) {
+        margin: 0.5rem 0;
+    }
+}
+
 // Header
 .header__main--content {
+    .logo {
+        margin: 0 auto;
+    }
+
     .cta {
         margin-block: 4.5rem;
     }
@@ -105,7 +118,7 @@
 
 // Footer
 .footer__main {
-    padding-block: 3rem;
+    padding: 2rem 0 3rem;
 
     p {
         margin-block-start: 3rem;
@@ -113,7 +126,7 @@
 }
 
 .footer__list {
-    margin: 0;
+    margin: 1rem 0 0;
     padding: 0;
 
     li > a {
