@@ -58,12 +58,22 @@ select {
 .subhead--white {
   color: #fff;
 }
+@media (min-width: 60em) {
+  .subhead--white {
+    font-size: 1.1rem;
+  }
+}
 .subhead--primary {
   color: #271a0c;
 }
 @media (min-width: 37.5em) {
   .subhead--primary {
     font-size: 1rem;
+  }
+}
+@media (min-width: 60em) {
+  .subhead--primary {
+    font-size: 1.3rem;
   }
 }
 
@@ -94,6 +104,11 @@ select {
 }
 .realtor--stats {
   font-size: 0.6rem;
+}
+@media (min-width: 60em) {
+  .realtor--stats {
+    font-size: 0.7rem;
+  }
 }
 
 .testimonial__quote {

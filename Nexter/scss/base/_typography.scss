@@ -25,6 +25,12 @@ select {
     &--white {
         @extend .subhead;
         color: #fff;
+
+        @include respond(large) {
+            & {
+                font-size: 1.1rem;
+            }
+        }
     }
 
     &--primary {
@@ -34,6 +40,12 @@ select {
         @include respond(small) {
             & {
                 font-size: 1rem;
+            }
+        }
+
+        @include respond(large) {
+            & {
+                font-size: 1.3rem;
             }
         }
     }
@@ -77,6 +89,12 @@ select {
 
     &--stats {
         font-size: 0.6rem;
+
+        @include respond(large) {
+            & {
+                font-size: 0.7rem;
+            }
+        }
     }
 }
 
