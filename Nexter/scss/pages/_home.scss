@@ -57,7 +57,7 @@
                 $color-primary-light-alpha,
                 $color-primary-light-alpha
             ),
-            url(/dist/img/back.jpg);
+            url(../img/back.jpg);
         background-size: cover;
 
         @include respond(medium) {
